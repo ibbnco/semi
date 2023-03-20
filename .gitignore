@@ -1,0 +1,13 @@
+/.metadata/
+*.bin
+*.map
+*.elf
+*.a
+*.prefs
+workspace/semi/.settings
+workspace/Servers
+workspace/**/.gitignore
+.project
+.classpath
+workspace/semi/webapp/WEB-INF/web.xml
+workspace/semi/webapp/META-INF/MANIFEST.MF
