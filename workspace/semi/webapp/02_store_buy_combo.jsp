@@ -67,11 +67,11 @@
 
     <div id="main">
         <table id="store">  
-            <tr><td colspan="3"><a href="04_combo_1.html">
+            <tr><td colspan="3"><a href="04_combo_1.jsp">
                     <img src="/images/combo1.jpg" alt="" width="200px" height="200px"></td></a>
-                <td colspan="3"><a href="04_combo_2.html">
+                <td colspan="3"><a href="04_combo_2.jsp">
                     <img src="/images/combo2.jpg" alt="" width="200px" height="200px"></td></a>
-                <td colspan="3"><a href="04_combo_3.html">
+                <td colspan="3"><a href="04_combo_3.jsp">
                     <img src="/images/combo3.jpg" alt="" width="200px" height="200px"></td></a>
             </tr>
             <tr><td id="detail" colspan="2"><b>솔로콤보</b></td><td>￦4,500</td>
