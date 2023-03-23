@@ -85,9 +85,7 @@
             <tr><td rowspan="3"><img src="/images/slamduck.jpg" alt="" width="300px" height="300px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>설명</td>
                 <td>&nbsp;&nbsp;￦9,000<br><br>&nbsp;&nbsp;포스터 1개<br><br>&nbsp;&nbsp;슬램덩크 포스터</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.html';">장바구니</button></td>
-                <td><button class="cart_orderbtn right" onclick="location.href='03_store_order.jsp';">구매하기</button></td></tr>
-            <tr><td colspan="2"></td><td></td></tr>
+            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
     <footer>footer</footer>
