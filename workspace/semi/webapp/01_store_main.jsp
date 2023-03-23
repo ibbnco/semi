@@ -79,7 +79,7 @@
             <li><a href="">영화</a></li>
             <li><a href="">예매</a></li>
             <li><a href="">극장</a></li>
-            <li><a href="01_store_main.html">스토어</a></li>
+            <li><a href="01_store_main.jsp">스토어</a></li>
             <li><a href="">이벤트</a></li>
         </ul>
     </div>
@@ -88,18 +88,18 @@
         <table border="0" id="store">
             <tr>
                 <td class="name">팝콘</td>
-                <td><button type="button" onclick="location.href='02_store_buy_pop.html';">+</button></td>
+                <td><button type="button" onclick="location.href='02_store_buy_pop.jsp';">+</button></td>
                 <td class="name">음료</td>
-                <td><button type="button" onclick="location.href='02_store_buy_coke.html';">+</button></td>
+                <td><button type="button" onclick="location.href='02_store_buy_coke.jsp';">+</button></td>
                 <td class="name">스낵</td>
-                <td><button type="button" onclick="location.href='02_store_buy_snack.html';">+</button></td>
+                <td><button type="button" onclick="location.href='02_store_buy_snack.jsp';">+</button></td>
             </tr>
             <tr>
-                <td><a href="02_store_buy_pop.html"><img src="/resources/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
+                <td><a href="02_store_buy_pop.jsp"><img src="/resources/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
                 <td></td>
-                <td><a href="02_store_buy_coke.html"><img src="/resources/coke.png" alt="" width="180px" height="160px"></a></td>
+                <td><a href="02_store_buy_coke.jsp"><img src="/resources/coke.png" alt="" width="180px" height="160px"></a></td>
                 <td></td>
-                <td><a href="02_store_buy_snack.html"><img src="/resources/nachonew2.jpg" alt="" width="200px" height="150px"></a></td>
+                <td><a href="02_store_buy_snack.jsp"><img src="/resources/nachonew2.jpg" alt="" width="200px" height="150px"></a></td>
                 <td></td>
             </tr>
             <tr><td class="name2">오리지널 팝콘</td><td>￦4,500</td>
@@ -107,14 +107,14 @@
             <td class="name2">나쵸</td><td>￦4,000</td></tr>
             <tr class="name">
                 <td>콤보</td>
-                <td><button type="button" onclick="location.href='02_store_buy_combo.html';">+</button></td>
+                <td><button type="button" onclick="location.href='02_store_buy_combo.jsp';">+</button></td>
                 <td>굿즈</td>
-                <td><button type="button" onclick="location.href='02_store_buy_goods.html';">+</button></td>
+                <td><button type="button" onclick="location.href='02_store_buy_goods.jsp';">+</button></td>
             </tr>
             <tr>
-                <td><a href="02_store_buy_combo.html"><img src="/resources/combo1.jpg" alt="" width="230px" height="230px"></a></td>
+                <td><a href="02_store_buy_combo.jsp"><img src="/resources/combo1.jpg" alt="" width="230px" height="230px"></a></td>
                 <td></td>
-                <td><a href="02_store_buy_goods.html"><img src="/resources/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>
+                <td><a href="02_store_buy_goods.jsp"><img src="/resources/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>
                 <td></td>
             </tr>
             <tr><td class="name2">솔로콤보</td><td>￦4,500</td>
