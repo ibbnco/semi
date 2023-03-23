@@ -41,24 +41,21 @@
     .line{
         border-bottom: 1px solid #104E86;
     }
-    .cart_orderbtn {
+	.cart_orderbtn {
         width: 200px;
         height: 50px;
-        font-size: 16px;
-        margin: auto;
-        border-radius: 5px;
-    }
-    .cart_orderbtn.left {
-        background-color: #CAD7E4;
-        color: white;
+        margin: 0 auto;
         border: none;
+        border-radius: 5px;
+        align-text: center;
     }
 
-    .cart_orderbtn.right {
-        background-color: #104E86;
+    .cart_orderbtn.left{
+        font-size: 16px;
+        background-color: #CAD7E4;
         color: white;
-        border: none;
-    }
+ 	}
+ 	
     #table3{
         text-align: center;
     }
@@ -88,14 +85,9 @@
             <tr><td><span class="des">고소한 치즈가 들어간 팝콘</span></td></tr>
             <tr><td rowspan="3"><img src="/images/치즈팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td><td>￦5,500<br><br>치즈 팝콘 1개<br><br>체다치즈:뉴질랜드산</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.html';">장바구니</button></td>
-                <td><button class="cart_orderbtn right" onclick="location.href='03_store_order.html';">구매하기</button></td></tr>
-            <tr><td colspan="2"></td><td></td></tr>
+            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
     <footer>footer</footer>
-</body>
-</html>
-
 </body>
 </html>
