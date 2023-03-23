@@ -67,20 +67,20 @@
     
 	<div id="main">
 	    <table id="store">
-	        <tr><td colspan="3"><a href="04_bever_coke.html">
+	        <tr><td colspan="3"><a href="04_bever_coke.jsp">
 	                <img src="/images/coke.png" alt="" width="150px" height="130px"></td></a>
-	            <td colspan="3"><a href="04_bever_cider.html">
+	            <td colspan="3"><a href="04_bever_cider.jsp">
 	                <img src="/images/cider.jpg" alt="" width="300px" height="150px"></td></a>
-	            <td colspan="3"><a href="04_bever_ade.html">
+	            <td colspan="3"><a href="04_bever_ade.jsp">
 	                <img src="/images/pinkade.jpg" alt="" width="200px" height="200px"></td></a>
 	        </tr>
 	        <tr><td id="detail" colspan="2"><b>콜라</b></td><td>￦2,500</td>
 	        <td id="detail" colspan="2"><b>사이다</b></td><td>￦2,500</td>
 	        <td id="detail" colspan="2"><b>에이드</b></td><td>￦3,500</td>
 	        </tr>
-	        <tr><td colspan="3"><a href="04_bever_ame.html">
+	        <tr><td colspan="3"><a href="04_bever_ame.jsp">
 	                <img src="/images/ame.jpg" alt="" width="180px" height="200px"></td></a> 
-	            <td colspan="3"><a href="04_bever_iceame.html">
+	            <td colspan="3"><a href="04_bever_iceame.jsp">
 	                <img src="/images/iceame.jpg" alt="" width="300px" height="200px"></td></a>        
 	        </tr>
 	        <tr><td id="detail"><b>아메리카노</b></td><td colspan="2">￦2,500</td>
