@@ -68,20 +68,20 @@
 
     <div id="main">
         <table id="store">
-            <tr><td colspan="3"><a href="04_snack_nacho.html">
+            <tr><td colspan="3"><a href="04_snack_nacho.jsp">
                     <img src="/images/nachonew2.jpg" alt="" width="200px" height="160px"></td></a>
-                <td colspan="3"><a href="04_snack_hotdog.html">
+                <td colspan="3"><a href="04_snack_hotdog.jsp">
                     <img src="/images/hotdog.jpg" alt="" width="200px" height="200px"></td></a>
-                <td colspan="3"><a href="04_snack_chillhot.html">
+                <td colspan="3"><a href="04_snack_chillhot.jsp">
                     <img src="/images/cheesehotdog.jpg" alt="" width="200px" height="200px"></td></a>
             </tr>
             <tr><td id="detail" colspan="2"><b>나쵸</b></td><td>￦4,000</td>
             <td id="detail" colspan="2"><b>핫도그</b></td><td>￦3,500</td>
             <td id="detail" colspan="2"><b>칠리핫도그</b></td><td>￦4,000</td>
             </tr>
-            <tr><td colspan="3"><a href="04_snack_pretzel.html">
+            <tr><td colspan="3"><a href="04_snack_pretzel.jsp">
                     <img src="/images/pretzel.jpg" alt="" width="200px" height="200px"></td></a> 
-                <td colspan="3"><a href="04_snack_squid.html">
+                <td colspan="3"><a href="04_snack_squid.jsp">
                     <img src="/images/squid.jpg" alt="" width="200px" height="200px"></td></a>                
             </tr>
             <tr><td id="detail"><b>프레첼</b></td><td colspan="2">￦3,500</td>
