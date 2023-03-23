@@ -40,7 +40,7 @@
 	
     <div id="main_detail"><img src="/images/storephoto.jpg" alt="" width="1060px" height="300px"></div>
     <div id="main">
-		<table border="0" id="store">
+		<table id="store">
         <tr>
             <td class="name">팝콘</td>
             <td><button type="button" onclick="location.href='02_store_buy_pop.jsp';">+</button></td>
