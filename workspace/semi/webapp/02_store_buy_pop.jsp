@@ -67,20 +67,20 @@
     
     <div id="main">
         <table id="store">
-            <tr><td colspan="3"><a href="04_popcorn.html">
+            <tr><td colspan="3"><a href="04_popcorn.jsp">
                     <img src="/images/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-                <td colspan="3"><a href="04_popcorn_sweet.html">
+                <td colspan="3"><a href="04_popcorn_sweet.jsp">
                     <img src="/images/카라멜팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-                <td colspan="3"><a href="04_popcorn_garlic.html">
+                <td colspan="3"><a href="04_popcorn_garlic.jsp">
                     <img src="/images/갈릭팝콘.jpg" alt="" width="200px" height="200px"></a></td>
             </tr>
             <tr><td id="detail" colspan="2"><b>팝콘</b></td><td>￦4,500</td>
             <td id="detail" colspan="2"><b>카라멜팝콘</b></td><td>￦5,000</td>
             <td id="detail" colspan="2"><b>갈릭팝콘</b></td><td>￦5,000</td>
             </tr>
-            <tr><td colspan="3"><a href="04_popcorn_cheese.html">
+            <tr><td colspan="3"><a href="04_popcorn_cheese.jsp">
                     <img src="/images/치즈팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-                <td colspan="3"><a href="04_popcorn_dbcheese.html">
+                <td colspan="3"><a href="04_popcorn_dbcheese.jsp">
                     <img src="/images/더블치즈팝콘.jpg" alt="" width="200px" height="200px"></a></td>    
             </tr>
             <tr><td id="detail"><b>치즈팝콘</b></td><td colspan="2">￦5,500</td>
