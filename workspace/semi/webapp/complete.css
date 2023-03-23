@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+    a{ text-decoration-line: none; }
+    a:link { color:cornflowerblue; text-decoration: none;}
+    a:visited { color: cornflowerblue; text-decoration: none;}
+    a:hover { color: #104E86; text-decoration: none;}
+    
+    p{
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+    
+    .header {
+        height: 135px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #78B9E9;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 4fr 3fr;
+    }
+
+    .join{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    ul>li {
+        display: inline;
+    }
+
+    ul{
+        float: right;
+    }
+
+     li{
+        float: left;
+    }
+
+    .header_menu a.active{
+        background-color: azure;
+    }
+
+    .header_menu div{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_menu ul {
+        text-align: center;
+    }
+
+    .header_menu ul li {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header_menu ul li a {
+        display: block;
+        font: bold 25px 'arial';
+        margin: 10px 16px 10px 16px;
+        letter-spacing: 1px;
+    }
+    
+    .logo {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mypage {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+    }
+    
+    .mypage:last-child {
+        padding-right: 50px;
+        font-size: 12px;
+    }
+    
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #logo {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+        /* header, category */
+
+    #menuname{
+        float: left;
+        font-size: x-large;
+        font-weight: bolder;
+        color: #104E86;
+    }
+    
+    #menuname ul{
+        float: right;
+    }
+    
+    #menuname li{
+        float: left;
+    }
+    
+    #menuname ul>li {
+        display: inline;
+    }
+
+    body{
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    .purchase {
+        width: 30%;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .purchase ul {
+        background-color: whitesmoke;
+        padding: 30px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .purchase ul :first-child {
+        color: #104E86;
+        font-weight: bold;
+        font-size: large;
+        }
+    
+    .purchaselist_detail:nth-child(3) {
+        vertical-align: top;
+    }
+
+    .purchaselist_detail:nth-child(3) a {
+        font-size: 12px;
+    }
+
+    .purchaselist_detail:nth-child(3) p {
+        margin-top: 6px;
+        font-weight: bold;
+    }
+
+    .purchaselist_store {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .purchaselist_option {
+        padding: 20px;
+    }
+
+    .purchaselist_detail :nth-child(1),
+    .purchaselist_detail :nth-child(2),
+    .purchaselist_detail :nth-child(4),
+    .purchaselist_detail :nth-child(5),
+    .purchaselist_detail :nth-child(6) {
+        text-align: center;
+    }
+
+    .purchaselist_detail :nth-child(5) button {
+        background-color: #104E86;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .purchaselist_optionbtn{
+        background-color: aliceblue;
+        color: #104E86;
+        border: none;   
+    }
+
+    #number{ width: 40px;}
+
+    .purchase_mainbtns {
+        width: 420px;
+        height: 100px;
+        padding-top: 40px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        text-align: center;
+    }
+
+    .purchase_orderbtn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #CAD7E4;
+        color: white;
+        border: none;
+ 	}
+
+
+    table {
+        border-top: solid 1.5px black;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    thead {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    tbody {
+        font-size: 12px;
+    }
+
+    td {
+        padding: 15px 0px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    footer {
+        background-color: #6188AF;
+        width: 100%;
+        height: 100px;
+    }
