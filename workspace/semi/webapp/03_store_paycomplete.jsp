@@ -55,7 +55,7 @@
             </form>
         </table>
         <div class="purchase_mainbtns">
-            <button class="purchase_orderbtn" onclick="location.href='01_store_main.html';">돌아가기</button>
+            <button class="purchase_orderbtn" onclick="location.href='01_store_main.jsp';">돌아가기</button>
         </div>
     <footer>footer</footer>
 </body>
