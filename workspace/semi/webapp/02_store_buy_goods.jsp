@@ -68,11 +68,11 @@
 
     <div id="main">
         <table id="store"> 
-            <tr><td colspan="3"><a href="04_goods_1.html">
+            <tr><td colspan="3"><a href="04_goods_1.jsp">
                     <img src="/images/marveltumbler.jpg" alt="" width="150px" height="130px"></td></a>
-                <td colspan="3"><a href="04_goods_2.html">
+                <td colspan="3"><a href="04_goods_2.jsp">
                     <img src="/images/slamduck.jpg" alt="" width="200px" height="150px"></td></a>
-                <td colspan="3"><a href="04_goods_3.html">
+                <td colspan="3"><a href="04_goods_3.jsp">
                     <img src="/images/marvelsignature.jpg" alt="" width="300px" height="190px"></td></a>
             </tr>
             <tr><td id="detail" colspan="2"><b>마블 텀블러</b></td><td>￦10,500</td>
