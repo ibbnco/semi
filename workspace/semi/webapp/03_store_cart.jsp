@@ -64,8 +64,8 @@
             </form>
         </table>
         <div class="cart_mainbtns">
-            <button class="cart_orderbtn left" onclick="location.href='01_store_main.html';">돌아가기</button>
-            <button class="cart_orderbtn right" onclick="location.href='03_store_payment.html';">구매하기</button>
+            <button class="cart_orderbtn left" onclick="location.href='01_store_main.jsp';">돌아가기</button>
+            <button class="cart_orderbtn right" onclick="location.href='03_store_payment.jsp';">구매하기</button>
         </div>
     <footer>footer</footer>
 </body>
