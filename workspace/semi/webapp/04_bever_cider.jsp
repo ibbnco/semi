@@ -25,6 +25,21 @@
 	    padding-left: 220px;
 	    padding-right: 220px;
 	}
+	
+	.cart_orderbtn {
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 5px;
+        align-text: center;
+    }
+
+    .cart_orderbtn.left{
+        font-size: 16px;
+        background-color: #CAD7E4;
+        color: white;
+ 	}
 	#store{
 	    width: 100%;
 	    height: 100%;
@@ -41,24 +56,7 @@
     .line{
         border-bottom: 1px solid #104E86;
     }
-    .cart_orderbtn {
-        width: 200px;
-        height: 50px;
-        font-size: 16px;
-        margin: auto;
-        border-radius: 5px;
-    }
-    .cart_orderbtn.left {
-        background-color: #CAD7E4;
-        color: white;
-        border: none;
-    }
 
-    .cart_orderbtn.right {
-        background-color: #104E86;
-        color: white;
-        border: none;
-    }
     #table3{
         text-align: center;
     }
@@ -89,9 +87,7 @@
             <tr><td rowspan="3"><img src="/images/cider.jpg" alt="" width="400px" height="300px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>제품</td>
                 <td>&nbsp;&nbsp;￦2,500<br><br>&nbsp;&nbsp;사이다 1개<br><br>&nbsp;&nbsp;칠성사이다</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.html';">장바구니</button></td>
-                <td><button class="cart_orderbtn right" onclick="location.href='03_store_order.html';">구매하기</button></td></tr>
-            <tr><td colspan="2"></td><td></td></tr>
+            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
     <footer>footer</footer>
