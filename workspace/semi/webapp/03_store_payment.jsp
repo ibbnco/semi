@@ -60,7 +60,6 @@
   
   /*약관 영역 렌더링*/
   const paymentAgreement = paymentWidget.renderAgreement('#agreement')
-
   
   /*결제창 열기*/
   document.querySelector("#payment-button").addEventListener("click",()=>{

@@ -93,14 +93,13 @@
 	    padding-right: 220px;
 	}
 	#main_detail{
-		padding-bottom: 5%;
+		padding-bottom: 40%;
 	}
 	
 	#store{
 	    width: 100%;
 	    height: 100%;
 	    padding: 5%;
-	    padding-bottom: 5%;
 	    border-spacing: 20px;
 	    margin: auto;
 	    font-weight: 300;
@@ -114,13 +113,11 @@
 	    color: #104E86;
 	    font-weight: bold;
 	    font-size: larger;
-	    height: 110%;	    
+	    height: 110%;
 	}
 	
-	.name3{
-	    color: #104E86;
-	    font-weight: bold;
-	    font-size: larger;
-	    height: 110%;	
-	    padding-bottom: 5%;	
+	footer {
+	    background-color: #6188AF;
+	    width: 100%;
+	    height: 100px;
 	}
