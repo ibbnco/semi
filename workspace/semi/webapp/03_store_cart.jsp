@@ -4,13 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript">
-	var count=0;
-	button.addEventListener('click', function () {
-    	count += 1;
-    	input.innerHTML = count;
-	}
-</script>
 </head>
 <body>
 <%-- <div id="wrapper">
@@ -52,8 +45,10 @@
                     </td>
                     <td><span class="price">￦4,500
                         <br><br>
-                    	<%@ include file="btn.jsp" %>    
-                    </td>
+                        <button type ="button" onclick="fnCalCount('p',this);">+</button>
+                        <input id="number" type="text" name="pop_out" value="0" readonly="readonly" style="text-align:center;">
+                        <button type="button" onclick="fnCalCount('m', this);">-</button></span>
+                    </td> 
                     <td class="cartlist_option">
                         <p>-3000p</p>
                     </td>
