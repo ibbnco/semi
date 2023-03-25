@@ -24,7 +24,6 @@ public class MemberLoginController extends HttpServlet{
 		//데이터 꺼내기
 		String member_id = req.getParameter("member_id");
 		String member_pwd = req.getParameter("member_pwd");
-
 		
 		//데이터 뭉치기
 		MemberVo paramVo = new MemberVo();
