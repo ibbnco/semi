@@ -38,7 +38,7 @@
         </ul>
     </div> 
 	
-    <div id="main_detail"><img src="/images/storephoto.jpg" alt="" width="1060px" height="300px"></div>
+    <div id="main_detail"><img src="/images/storephoto.jpg" alt="" width="1030px" height="300px"></div>
     <div id="main">
 		<table id="store">
         <tr>
@@ -66,7 +66,7 @@
             <td>굿즈</td>
             <td><button type="button" onclick="location.href='02_store_buy_goods.jsp';">+</button></td>
         </tr>
-        <tr>
+        <tr class="name">
             <td><a href="02_store_buy_combo.jsp"><img src="/images/combo1.jpg" alt="" width="230px" height="230px"></a></td>
             <td></td>
             <td><a href="02_store_buy_goods.jsp"><img src="/images/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>

@@ -85,9 +85,7 @@
             <tr><td rowspan="3"><img src="/images/combo2.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>구성</td>
                 <td>&nbsp;&nbsp;￦5,500<br><br>&nbsp;&nbsp;커플콤보 1개<br><br>&nbsp;&nbsp;팝콘 2개, 콜라 2개</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.html';">장바구니</button></td>
-                <td><button class="cart_orderbtn right" onclick="location.href='03_store_order.jsp';">구매하기</button></td></tr>
-            <tr><td colspan="2"></td><td></td></tr>
+            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
     <footer>footer</footer>
