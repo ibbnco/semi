@@ -80,7 +80,7 @@
 	
     <div id="main">
         <table border="0"  id="store">
-            <tr><td id="detail" class="line">오리지널 팝콘</td><td colspan="3"></td></tr>
+            <tr><td id="detail" class="line">팝콘</td><td colspan="3"></td></tr>
             <tr><td><span class="des">제일 기본적인 팝콘</span></td></tr>
             <tr><td rowspan="3"><img src="/images/팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td>
