@@ -16,6 +16,7 @@
 	    display: flex;
 	    justify-content: space-evenly;
 	}
+	
 	.header_logo {
 	    display: flex;
 	    justify-content: left;
@@ -33,6 +34,7 @@
 	.header_menu a:hover{
 	    background-color: cornflowerblue;
 	}
+	
 	.header_menu a.active{
 	    background-color: azure;
 	}
@@ -93,7 +95,7 @@
 	    padding-right: 220px;
 	}
 	#main_detail{
-		padding-bottom: 40%;
+		padding-bottom: 5%;
 	}
 	
 	#store{
@@ -116,8 +118,3 @@
 	    height: 110%;
 	}
 	
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}

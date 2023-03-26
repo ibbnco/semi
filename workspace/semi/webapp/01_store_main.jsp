@@ -77,6 +77,6 @@
        </table>
     </div>
     
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>
