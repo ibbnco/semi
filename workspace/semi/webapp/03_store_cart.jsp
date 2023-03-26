@@ -45,7 +45,7 @@
                     </td>
                     <td><span class="price">￦4,500
                         <br><br>
-                        <%@ include file="btn.jsp" %>
+                        <%@ include file="btn.jsp" %></span>
                     </td> 
                     <td class="cartlist_option">
                         <p>-3000p</p>
