@@ -16,6 +16,7 @@
 	    display: flex;
 	    justify-content: space-evenly;
 	}
+	
 	.header_logo {
 	    display: flex;
 	    justify-content: left;
@@ -33,6 +34,7 @@
 	.header_menu a:hover{
 	    background-color: cornflowerblue;
 	}
+	
 	.header_menu a.active{
 	    background-color: azure;
 	}
