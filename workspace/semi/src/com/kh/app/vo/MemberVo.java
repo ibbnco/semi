@@ -1,118 +1,94 @@
 package com.kh.app.vo;
 
 public class MemberVo {
-	private String member_no;
-	private String member_id;
-	private String member_pwd;
-	private String member_name;
-	private String member_nick;
-	private String member_tel;
-	private String member_email;
-	private String quit_yn;
-	private String member_grade;
-	private String enroll_date;
-	private String member_point;
-	private String grade_no;
-	public String getMember_no() {
-		return member_no;
+	private String product_no;
+	private String product_name;
+	private String product_price;
+	private String product_detail;
+	private String product_image;
+	private String count;
+	private String delete_yn;
+	private String product_date;
+	private String product_revise;
+	public String getProduct_no() {
+		return product_no;
 	}
-	public void setMember_no(String member_no) {
-		this.member_no = member_no;
+	public void setProduct_no(String product_no) {
+		this.product_no = product_no;
 	}
-	public String getMember_id() {
-		return member_id;
+	public String getProduct_name() {
+		return product_name;
 	}
-	public void setMember_id(String member_id) {
-		this.member_id = member_id;
+	public void setProduct_name(String product_name) {
+		this.product_name = product_name;
 	}
-	public String getMember_pwd() {
-		return member_pwd;
+	public String getProduct_price() {
+		return product_price;
 	}
-	public void setMember_pwd(String member_pwd) {
-		this.member_pwd = member_pwd;
+	public void setProduct_price(String product_price) {
+		this.product_price = product_price;
 	}
-	public String getMember_name() {
-		return member_name;
+	public String getProduct_detail() {
+		return product_detail;
 	}
-	public void setMember_name(String member_name) {
-		this.member_name = member_name;
+	public void setProduct_detail(String product_detail) {
+		this.product_detail = product_detail;
 	}
-	public String getMember_nick() {
-		return member_nick;
+	public String getProduct_image() {
+		return product_image;
 	}
-	public void setMember_nick(String member_nick) {
-		this.member_nick = member_nick;
+	public void setProduct_image(String product_image) {
+		this.product_image = product_image;
 	}
-	public String getMember_tel() {
-		return member_tel;
+	public String getCount() {
+		return count;
 	}
-	public void setMember_tel(String member_tel) {
-		this.member_tel = member_tel;
+	public void setCount(String count) {
+		this.count = count;
 	}
-	public String getMember_email() {
-		return member_email;
+	public String getDelete_yn() {
+		return delete_yn;
 	}
-	public void setMember_email(String member_email) {
-		this.member_email = member_email;
+	public void setDelete_yn(String delete_yn) {
+		this.delete_yn = delete_yn;
 	}
-	public String getQuit_yn() {
-		return quit_yn;
+	public String getProduct_date() {
+		return product_date;
 	}
-	public void setQuit_yn(String quit_yn) {
-		this.quit_yn = quit_yn;
+	public void setProduct_date(String product_date) {
+		this.product_date = product_date;
 	}
-	public String getMember_grade() {
-		return member_grade;
+	public String getProduct_revise() {
+		return product_revise;
 	}
-	public void setMember_grade(String member_grade) {
-		this.member_grade = member_grade;
-	}
-	public String getEnroll_date() {
-		return enroll_date;
-	}
-	public void setEnroll_date(String enroll_date) {
-		this.enroll_date = enroll_date;
-	}
-	public String getMember_point() {
-		return member_point;
-	}
-	public void setMember_point(String member_point) {
-		this.member_point = member_point;
-	}
-	public String getGrade_no() {
-		return grade_no;
-	}
-	public void setGrade_no(String grade_no) {
-		this.grade_no = grade_no;
+	public void setProduct_revise(String product_revise) {
+		this.product_revise = product_revise;
 	}
 	@Override
 	public String toString() {
-		return "MemberVo [member_no=" + member_no + ", member_id=" + member_id + ", member_pwd=" + member_pwd
-				+ ", member_name=" + member_name + ", member_nick=" + member_nick + ", member_tel=" + member_tel
-				+ ", member_email=" + member_email + ", quit_yn=" + quit_yn + ", member_grade=" + member_grade
-				+ ", enroll_date=" + enroll_date + ", member_point=" + member_point + ", grade_no=" + grade_no + "]";
+		return "MemberVo [product_no=" + product_no + ", product_name=" + product_name + ", product_price="
+				+ product_price + ", product_detail=" + product_detail + ", product_image=" + product_image + ", count="
+				+ count + ", delete_yn=" + delete_yn + ", product_date=" + product_date + ", product_revise="
+				+ product_revise + "]";
 	}
-	public MemberVo(String member_no, String member_id, String member_pwd, String member_name, String member_nick,
-			String member_tel, String member_email, String quit_yn, String member_grade, String enroll_date,
-			String member_point, String grade_no) {
+	public MemberVo(String product_no, String product_name, String product_price, String product_detail,
+			String product_image, String count, String delete_yn, String product_date, String product_revise) {
 		super();
-		this.member_no = member_no;
-		this.member_id = member_id;
-		this.member_pwd = member_pwd;
-		this.member_name = member_name;
-		this.member_nick = member_nick;
-		this.member_tel = member_tel;
-		this.member_email = member_email;
-		this.quit_yn = quit_yn;
-		this.member_grade = member_grade;
-		this.enroll_date = enroll_date;
-		this.member_point = member_point;
-		this.grade_no = grade_no;
+		this.product_no = product_no;
+		this.product_name = product_name;
+		this.product_price = product_price;
+		this.product_detail = product_detail;
+		this.product_image = product_image;
+		this.count = count;
+		this.delete_yn = delete_yn;
+		this.product_date = product_date;
+		this.product_revise = product_revise;
 	}
 	public MemberVo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 	
 
