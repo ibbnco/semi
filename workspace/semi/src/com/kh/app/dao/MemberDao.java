@@ -15,7 +15,7 @@ public class MemberDao {
 		ResultSet rs = null;
 		MemberVo loginMember = null;
 		try {
-			String sql = "SELECT ID , PWD FROM MEMBER WHERE ID = ? AND PWD = ?";
+			String sql = "SELECT * FROM PRODUCT WHERE ID=? AND PWD=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, vo.getMember_id());
 			pstmt.setString(2, vo.getMember_pwd());
