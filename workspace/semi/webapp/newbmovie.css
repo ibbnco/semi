@@ -95,7 +95,7 @@
 	    padding-right: 220px;
 	}
 	#main_detail{
-		padding-bottom: 40%;
+		padding-bottom: 5%;
 	}
 	
 	#store{
@@ -118,8 +118,3 @@
 	    height: 110%;
 	}
 	
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}
