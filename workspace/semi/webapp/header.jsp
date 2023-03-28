@@ -103,14 +103,13 @@ a{
             <img class="logo" src="movielogo.png" alt="logo">
         </div>
         <div class="mypage">
-            <a href="#" target='blank'><img src="회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
-            <a href="#" target='blank'><img src="로그인.png" alt="login"> <p class="text">로그인</p></a>
-            <a href="#" target='blank'><img src="마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
-            <a href="#" target='blank'><img src="고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
+            <a href="#" target='blank'><img src="회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
+            <a href="#" target='blank'><img src="로그인.png" alt="login"> <p class="text">로그인</p></a>
+            <a href="#" target='blank'><img src="마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+            <a href="#" target='blank'><img src="고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
         </div>
         </header>
                 <div class="header_menu">
-                    <section>
                     <ul class="bo">
                         <li><a href="newbmovie.html">영화</a></li>
                         <li><a href="">예매</a></li>
