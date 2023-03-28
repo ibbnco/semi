@@ -1,0 +1,154 @@
+a{
+    text-decoration-line: none;
+
+}
+/* */
+
+
+.header {
+    margin-right: 220px;
+    margin-left: 220px;
+    height: 135px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #78B9E9;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.join{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_logo {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    font: bold 40px 'arial';
+    text-align: left;
+    padding-top: 14px;
+    color: cornflowerblue;
+    letter-spacing: 2px;
+    flex-direction: column;
+    position: relative;
+    height: 100px;
+}
+
+.header_menu a:hover{
+    background-color: cornflowerblue;
+}
+.header_menu a.active{
+    background-color: azure;
+}
+
+
+.header_menu div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_menu ul {
+    margin-top: 40px;
+    margin-left: 220px;
+}
+
+.header_menu ul li {
+    display: inline-block;
+}
+
+.header_menu ul li a {
+    display: block;
+    font: bold 30px 'arial';
+    margin: 0px 16px;
+    letter-spacing: 1px;
+}
+.logo {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mypage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#as1{
+    margin-left: 220px; 
+    width: 100px;
+    height: 500px;    
+    text-align: center;
+    flex-grow: 1;
+    background-color: #CAD7E4;
+    padding: 10px;
+    }
+    #art1{
+    margin-right: 220px;
+    flex: 7;
+    padding: 10px;
+    }
+    #art2{
+        margin-right: 220px;
+        margin-left: 220px;
+        flex: 7;
+        padding: 10px;
+        }
+    .inner{
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+    }
+    .outer{
+        width: 800px;
+        height: 600px;
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 10px;
+        column-gap: 100px;
+
+    }
+    #t1,#t2,#t3{
+        background-color: #97fd9c;
+    }
+    #t4,#t5,#t6{
+        background-color: #bfebf7;
+    }
+    #t7,#t8{
+        background-color: #fcbfb7;
+    }
+    #lee1{
+        float: left;
+        margin-left: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+    #tab2{
+        margin-left: 0px;
+        margin-right: 220px;
+    }
+   
+   
+    
+
+
