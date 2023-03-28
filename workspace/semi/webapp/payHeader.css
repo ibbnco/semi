@@ -123,7 +123,6 @@
 
     .cart ul :first-child {
         color: #104E86;
-        font-weight: bold;
         }
     
     .cartlist_detail:nth-child(3) {
@@ -171,12 +170,6 @@
         margin-top: 5px;
     }
 
-    .cartlist_optionbtn{
-        background-color: aliceblue;
-        color: #104E86;
-        border: none;   
-    }
-
     #number{ width: 40px;}
 
     .cart_mainbtns {
@@ -194,7 +187,8 @@
         margin: auto;
         border-radius: 5px;
     }
-    .cart_orderbtn.left {
+    
+	.cart_orderbtn.left {
         background-color: #CAD7E4;
         color: white;
         border: none;
@@ -207,7 +201,7 @@
     }
 
     table {
-        border-top: solid 1.5px black;
+        border-top: solid 1.5px lightgrey;
         border-collapse: collapse;
         width: 100%;
         font-size: 14px;
@@ -222,7 +216,7 @@
         font-size: 12px;
     }
 
-    td {
+    th, td {
         padding: 15px 0px;
         border-bottom: 1px solid lightgrey;
     }
