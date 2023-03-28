@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <jsp:include page="adminHead.jsp" />
@@ -9,69 +8,67 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <main>
    <div id="container">
     <article id="art2">
-      <h2 style="text-align: left;">공지사항 관리
-          <div id="wrBtn" style="float: right;">
-			<button><a href="write3.jsp">게시글 작성</a></button>
-		  </div>
-      </h2>
+      <h2 style="text-align: left;">공지사항 관리</h2>
       <table class="table table-striped" id="tab1">
             <thead>
               <tr>
                 <th scope="col">번호</th>
                 <th scope="col">제목</th>
-                <th scope="col">내용</th>
+                <th scope="col">작성자</th>
                 <th scope="col">작성일</th>
               </tr>
             </thead>
             <tbody class="table table-striped">
-              <c:forEach items="${boardList}" var="bl">
-                <tr>
-                  <th scope="row">${bl.no}</th>
-                  <td>${bl.title}</td>
-                  <td>${bl.content}</td>
-                  <td>${bl.date}</td>
-                </tr>
-              </c:forEach> 
+              <tr>
+                <th scope="row">1</th>
+                <td>예매관련 공지사항</td>
+                <td>admin01</td>
+                <td>2023-03-13</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>코로나 관련 관람시 주의사항</td>
+                <td>admin01</td>
+                <td>2023-03-11</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>이벤트 당첨자 관련 공지사항</td>
+                <td>admin01</td>
+                <td>2023-03-11</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>매점이용 관련 공지사항</td>
+                <td>admin01</td>
+                <td>2023-03-10</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>상영관 관련 공지사항</td>
+                <td>admin01</td>
+                <td>2023-03-09</td>
+              </tr>
             </tbody>
           </table>
           <hr>
-          <nav id="navArea" aria-label="Page navigation example">
+          <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
               <li class="page-item disabled">
-                <c:if test="${ pageVo.currentPage > 1 }">
-					<a style="margin-right: 20px" class="page-link" href="/LeeS/admin3?page=${pageVo.currentPage-1}">이전</a>
-				</c:if>
+                <a class="page-link" href="#" style="font-size: 17px;">이전</a>
               </li>
-                <c:forEach var="i" begin="${pageVo.startPage}" end="${pageVo.endPage}">					
-					<c:if test="${pageVo.currentPage == i}">
-						<div><span style="font-size: 30px; padding-right: 20px;"  >${i}</span></div>
-					</c:if>
-					<c:if test="${pageVo.currentPage != i}">
-						<a style="font-size: 30px; padding-right: 20px;" href="/LeeS/admin3?page=${i}">${i}</a>
-					</c:if>
-				</c:forEach>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
               <li class="page-item">
-                <c:if test="${ pageVo.currentPage < pageVo.maxPage }">
-					<a class="page-link" href="/LeeS/admin3?page=${pageVo.currentPage+1}">다음</a>
-				</c:if>
+                <a class="page-link" href="#" style="font-size: 17px;">다음</a>
               </li>
             </ul>
           </nav>
         </article>  
-     </div>  
-   </main> 
  </body>
 </html>
-
-<script>
-
-	const tbody = document.querySelector("main tbody");
-	tbody.addEventListener("click" , function(event){
-		const no = event.target.parentNode.children[0].innerText;
-		location.href = "/LeeS/detail3?no=" + no;
-	});
-
-</script>
