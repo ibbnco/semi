@@ -19,6 +19,7 @@
 
 }
 footer {
+  clear:both;
   background-color:  #104E86;
   margin-top :30px;
   padding: 10px;

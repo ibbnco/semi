@@ -23,14 +23,14 @@
         	<c:if test="${loginMember == null }">
         	<a href="/member/join" ><img src="/resources/img/회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
             <a href="/member/login" ><img src="/resources/img/로그인.png" alt="login"> <p class="text">로그인</p></a>
-            <a href="/member/login" ><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
-            <a href="/member/login" ><img src="/resources/img/고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
+            <a href="/member/login" onclick="login();"><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+            <a href="/member/login" onclick="login();"><img src="/resources/img/고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
         	</c:if>
         	
         	<c:if test="${loginMember != null }">
         		${loginMember.memberNick}님 환영합니다.
         		 <a href="/member/logout"><img src="/resources/img/로그인.png" alt="logout"> <p class="text">로그아웃</p></a>
-        		 <a href="/myPage/dibs" ><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+        		 <a href="/myPage/point" ><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
             	 <a href="고객센터 페이지" ><img src="/resources/img/고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
         	
         	</c:if>
@@ -47,4 +47,9 @@
                 </ul>
             </div>
         
+        <script>
+			function login() {
+				alert("로그인 후 사용가능 합니다.");
+			}
+		</script>
 	

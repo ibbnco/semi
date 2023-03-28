@@ -75,5 +75,16 @@ public class MemberService {
 		return findPwd;
 	}
 
+	public int quit(MemberVo vo) throws Exception {
+		Connection conn = JDBCTemplate.getConnection();
+		
+		MemberDao dao = new MemberDao();
+		int result = dao.quit(conn,vo);
+		
+		JDBCTemplate.close(conn);
+		
+		return result;
+	}
+
 }
 

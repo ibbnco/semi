@@ -172,4 +172,17 @@ public class MemberDao {
 	}
 
 
+	public int quit(Connection conn, MemberVo vo) throws Exception {
+		
+		String sql = "DELETE FROM MEMBER WHERE MEMBER_ID = ? AND MEMBER_PWD = ?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, vo.getMemberId());
+		pstmt.setString(2, vo.getMemberPwd());
+		int result = pstmt.executeUpdate();
+		
+			
+		return result;
+	}
+
+
 }
