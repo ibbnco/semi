@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+ body{
+ padding-left: 220px;
+ padding-right: 220px;
+}
+.parant{
+    width: 930px;
+    margin-left: 33px;
+}
+.title{
+    border-top: 1px solid black;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+   background-color: #78B9E9;
+    text-align: center;
+    border-radius: 20px 20px  0 0;
+	width:930px;
+}
+
+.payment123{
+    border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   width: 928px;
+   height: 300px;
+   float: left;
+   
+}
+.all-payment{
+    border-top: 1px solid black;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+   height: 300px;
+   float: right;
+   width: 30%;
+}
+.payment{
+    width: 100px;
+}
+.moviechoice{
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 105px;
+    height: 130px;
+    text-align: center;
+    border-radius: 0 0 0 20px;
+
+}
+.moviechoiceinside{
+    padding-top: 55%;
+}
+.all-pay{
+    float: left;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 715px;
+    height: 130px;
+    text-align: center;
+}
+.payment2{
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 105px;
+    height: 130px;
+    text-align: center;
+    border-radius: 0 0 20px 0;
+}
+.paymentinside{
+    padding-top: 55%;
+}
+.hr1 {
+  background-color: #78B9E9;
+  height: 0.6px;
+}

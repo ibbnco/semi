@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+ body{
+ padding-left: 220px;
+ padding-right: 220px;
+}
+
+
+.parant{
+    width: 1030px;
+    margin-left: 26px;
+}
+
+.titlem{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    float: left;
+    width: 256px;
+    text-align: center;
+    border-radius: 20px 0 0 0;
+    
+    
+}
+.titlet{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    float: left;
+    width: 260px;
+    text-align: center;
+}
+.titleday{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    width: 174px;
+    text-align: center;
+}
+.titletime{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    width: 232px;
+    text-align: center;
+    border-radius: 0 20px 0  0;
+}
+
+.movielist{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    width: 258px;
+    float: left;
+    height: 300px;
+}
+.movielistinside{
+    padding-top: 16%;
+}
+.theaterlist{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 257px;
+    height: 300px;
+    float: left;
+}
+.theaterinside{
+    padding-top: 16%;
+}
+.day-part{
+    border-top: 1px solid black;
+    height: 300px;
+    width: 175px;
+    float: left;
+    overflow-y:scroll;
+    text-align: center;
+
+}
+.day-partin{
+    margin-top: 130px;
+}
+.timelist{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 233px;
+    height: 300px;
+    float: left;
+    text-align: center;
+}
+     .div2 {
+        border: 1px solid;
+        width: 50px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-top: 3px;
+        font-weight: bold;
+        border-radius: 5px 5px 5px 5px;
+      }
+
+      .clicked {
+        background-color: #78B9E9;
+        color: aliceblue;
+        border-radius: 5px 5px 5px 5px;
+        border: 1px solid black;
+      }
+.seatchoice{
+
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0 0 20px 0;
+    width: 100px;
+    height: 240px;
+    text-align: center
+    
+   
+}
+.seatchoiceinside{
+    margin-top: 100px;
+}
+.movieinf{
+    float: left;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 824px;
+    height: 240px;
+    text-align: center;
+    border-radius: 0 0 0 20px;
+}
+.choicemovieimage{
+    margin-right: 500px;
+    margin-top: 15px;
+
+}
+.choicetheater{
+    margin-top: -130px;
+    }
+
+.seatchoiceinside
+{
+  background-color: #78B9E9;
+  height: 30px;
+  margin-top: 45px;
+  width: 100px;
+  color: aliceblue;
+  border-radius: 20px 20px 20px 20px;
+}
+hr {
+  background-color: #78B9E9;
+  height: 0.6px;
+}
