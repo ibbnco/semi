@@ -6,7 +6,7 @@
         //아이디
         //아이디  value랑 정규식 검사하기
         const memberId = memberIdTag.value; 
-        const regExp = /[a-zA-Z0-9]{8,16}$/;
+        const regExp = /[a-zA-Z0-9]{6,12}$/;
         const result = regExp.test(memberId);
         
         if(result){

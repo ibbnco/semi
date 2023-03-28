@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>제발,,되라</h1>
+	<div id="wrapper">
+		<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %>
+		<%@ include file="/WEB-INF/views/common/footer.jsp" %>
+		
+	</div>
 </body>
 </html>

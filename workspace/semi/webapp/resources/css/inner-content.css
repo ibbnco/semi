@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.inner-content{
+	text-align :center;
+	font-size: 20px;
+	
+}
+table { 
+	margin: auto;
+}
+.comBtn{
+ 	background-color: #104E86;
+ 	color : white;
+    margin: 10px 15px 10px 15px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    cursor: pointer; 
+    text-align: center;
+ }

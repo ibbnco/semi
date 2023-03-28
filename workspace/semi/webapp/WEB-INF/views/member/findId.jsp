@@ -34,7 +34,7 @@
                     </c:if>
                     <c:remove var="findId"/>
                         <td><button class="linkBtn" type = "submit">아이디 찾기</div></td>
-                        <td><button class="linkBtn" onclick="location.href='/member/findPwd'">비밀번호 찾기</button></td>
+                        <td><button type = "button" class="linkBtn" onclick="location.href='/member/findPwd'">비밀번호 찾기</button></td>
                         
                     </tr>
                 </table>

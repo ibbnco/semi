@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td>아이디</td>
-                <td><input class="textBox" type="text" name="memberId"  placeholder="영문,숫자 조합 (8~12자)">
+                <td><input class="textBox" type="text" name="memberId"  placeholder="영문,숫자 조합 (6~12자)">
                 &nbsp;&nbsp;<button type="button" onclick="checkId();"class="comBtn">중복확인</button></td>
             </tr>
             <tr>

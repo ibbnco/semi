@@ -84,3 +84,28 @@ p{
     justify-content: center;
     align-items: center;
 }
+.content{
+	display: grid;
+	grid-template-columns: 3fr 7fr;
+}
+.inner_title{
+	width:60%;
+	font-size: 40px;
+	text-align:left;
+	background-color: azure;
+	margin: 20px 20px 20px 20px;
+}
+.comBtn , .inner_content .delBtn{
+ 	background-color: #104E86;
+ 	color : white;
+    margin: 10px 15px 10px 15px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    cursor: pointer; 
+    text-align: center;
+ }
+
+.inner_content table{
+ 	width:80%;
+ 	border: 1px solid #104E86;
+ }
