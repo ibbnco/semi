@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/store/list")
-public class BoardListController extends HttpServlet{
+@WebServlet("/store/list2")
+public class BoardListController2 extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		List<BoardVo> boardList = null;
 		try {
-			BoardService bs = new BoardService();
+			BoardService2 bs = new BoardService2();
 			boardList = bs.selectList();			
 		}catch(Exception e) {
 			System.out.println("예외 발생");
@@ -26,7 +26,7 @@ public class BoardListController extends HttpServlet{
 		System.out.println(boardList);
 		
 		req.setAttribute("boardList", boardList);
-		req.getRequestDispatcher("/02_store_buy_pop.jsp").forward(req, resp);
+		req.getRequestDispatcher("/02_store_buy_coke2.jsp").forward(req, resp);
 		
 	}
 	

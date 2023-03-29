@@ -61,12 +61,12 @@
     <div id="main">
         <table id="store">
 			<thead>
-	            <tr><td colspan="3"><a href="/store/pop1">
-	                    <img src="/images/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-	                <td colspan="3"><a href="/store/pop2">
-	                    <img src="/images/카라멜팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-	                <td colspan="3"><a href="/store/pop3">
-	                    <img src="/images/갈릭팝콘.jpg" alt="" width="200px" height="200px"></a></td>
+	            <tr><td colspan="3"><a href="04_snack_nacho.jsp">
+                    <img src="/images/nachonew2.jpg" alt="" width="200px" height="160px"></a></td>
+                <td colspan="3"><a href="04_snack_hotdog.jsp">
+                    <img src="/images/hotdog.jpg" alt="" width="200px" height="200px"></a></td>
+                <td colspan="3"><a href="04_snack_chillhot.jsp">
+                    <img src="/images/cheesehotdog.jpg" alt="" width="200px" height="200px"></a></td>
 	            </tr>
 			</thead>
 			<tbody>
@@ -79,10 +79,10 @@
 						</c:if>
 					</c:forEach>
 				</tr>
-				<tr><td colspan="3"><a href="/store/pop4">
-	                    <img src="/images/치즈팝콘.jpg" alt="" width="200px" height="200px"></a></td>
-	                <td colspan="3"><a href="/store/pop5">
-	                    <img src="/images/더블치즈팝콘.jpg" alt="" width="200px" height="200px"></a></td>    
+				<tr><td colspan="3"><a href="04_snack_pretzel.jsp">
+                    <img src="/images/pretzel.jpg" alt="" width="200px" height="200px"></a></td>
+                <td colspan="3"><a href="04_snack_squid.jsp">
+                    <img src="/images/squid.jpg" alt="" width="200px" height="200px"></a></td>                
             	</tr>
 			</tbody>	
 			<tfoot>		
