@@ -26,7 +26,7 @@
 <body>
     <header class="header">
         <div class="header_logo">
-            <a href="momain.html">
+            <a href="momain.jsp">
                 <h1>뉴비무비</h1>
             </a>
             <p>NEWBMOVIE</p>
@@ -56,7 +56,7 @@
     <div class="header_menu">
         <section>
             <ul>
-                <li><a href="momain.html">영화</a></li>
+                <li><a href="momain.jsp">영화</a></li>
                 <li><a href="">예매</a></li>
                 <li><a href="">극장</a></li>
                 <li><a href="">스토어</a></li>
@@ -73,9 +73,9 @@
                 <h2 class="text-2xl mb-3">스틸컷</h2>
                 <div class="px-4">
                     <div class="single-item w-full">
-                        <img src="웅남이1.jpg" alt="예고편" />
-                        <img src="웅남이2.jpg" alt="예고편" />
-                        <img src="웅남이3.jpg" alt="예고편" />
+                        <img src="../imgs/웅남이1.jpg" alt="예고편" />
+                        <img src="../imgs/웅남이2.jpg" alt="예고편" />
+                        <img src="../imgs/웅남이3.jpg" alt="예고편" />
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
         <!-- 상단 소개 -->
         <div class="flex mb-5">
             <div class="flex max-h-80">
-                <img class="object-contain" src="웅남이.jpeg" alt="스즈메">
+                <img class="object-contain" src="../imgs/웅남이.jpeg" alt="웅남이">
             </div>
             <div class="flex flex-column justify-between pl-3 py-3">
                 <div>
@@ -112,7 +112,7 @@
                 <h2 class="text-2xl mb-3">예고편</h2>
                 <div>
                     <a href="http://h.vod.cgv.co.kr/vodCGVa/86823/86823_213065_1200_128_960_540.mp4">
-                        <img src="웅남이 예고편.png" alt="예고편" />
+                        <img src="../imgs/웅남이 예고편.png" alt="예고편" />
                     </a>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                     <h2 class="text-2xl mb-3">스틸컷</h2>
                     <div>
                         <a id="open-overlay">
-                            <img src="웅남이 스틸컷.jpg" alt="스틸컷" />
+                            <img src="../imgs/웅남이 스틸컷.jpg" alt="스틸컷" />
                         </a>
                     </div>
                 </div>
@@ -129,16 +129,33 @@
         </div>
 
         <div>
-            <img style="margin: auto;" src="웅남이 평점.png" alt="평점">
+            <img style="margin: auto;" src="../imgs/웅남이 평점.png" alt="평점">
         </div>
         <div class="foo">
-            <footer>
-                <input class="topBtn" type="button" value="TOP" style="cursor:pointer;" onclick="window.scrollTo(0,0);">
-                <p>&copy; 2023 NewbMovie. All rights reserved.</p>
-                <p>주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 2F, 3F, 4F, 5F, 6F</p>
-                <p>Tel : 1544-9970 / Fax : 02-562-2378</p>
-
-            </footer>
+  <div class="container">
+      <div class="row">
+         <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+            <thead>
+               <tr>
+                  <th style="background-color: #eeeeee; text-align: center;">번호</th>
+                  <th style="background-color: #eeeeee; text-align: center;">제목</th>
+                  <th style="background-color: #eeeeee; text-align: center;">작성자</th>
+                  <th style="background-color: #eeeeee; text-align: center;">작성일</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td>안녕하세요</td>
+                  <td>홍길동</td>
+                  <td>2023-03-29</td>
+               </tr>
+            </tbody>
+         </table>
+         <a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+      </div>
+   </div>
+  </div>
         </div>
     </div>
 </body>

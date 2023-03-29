@@ -47,7 +47,7 @@
 <div class="header_menu">
     <section>
     <ul>
-        <li><a href="momain.html">영화</a></li>
+        <li><a href="momain.jsp">영화</a></li>
         <li><a href="">예매</a></li>
         <li><a href="">극장</a></li>
         <li><a href="">스토어</a></li>
@@ -66,7 +66,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="../imgs/더 퍼스트 슬램덩크.jpeg"  alt="슬팸덩크"> <p class="text">더 퍼스트 슬램덩크</p>
+        <div id="jpeg"><img src="../imgs/더 퍼스트 슬램덩크.jpeg"  alt="슬팸덩크"> <p class="text">더 퍼스트 슬램덩크</p>
             <div>
                 <div>평점 : 97% </div>
                 <div>예매율 15.2%</div>
@@ -74,7 +74,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="소울메이트.jpeg"  alt="소울메이트"> <p class="text">소울메이트</p>
+        <div id="jpeg"><img src="../imgs/소울메이트.jpeg"  alt="소울메이트"> <p class="text">소울메이트</p>
             <div>
                 <div>평점 : 95% </div>
                 <div>예매율 10.3%</div>
@@ -82,7 +82,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="아임 히어로 더 파이널.jpeg"  alt="히어로"> <p class="text">아임 히어로 더 파이널</p>
+        <div id="jpeg"><img src="../imgs/아임 히어로 더 파이널.jpeg"  alt="히어로"> <p class="text">아임 히어로 더 파이널</p>
             <div>
                 <div>평점 : 98% </div>
                 <div>예매율 7.7%</div>
@@ -90,7 +90,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="샤잠! 신들의 분노.jpeg"  alt="샤잠"> <p class="text">샤잠! 신들의 분노</p>
+        <div id="jpeg"><img src="../imgs/샤잠! 신들의 분노.jpeg"  alt="샤잠"> <p class="text">샤잠! 신들의 분노</p>
             <div>
                 <div>평점 : 85% </div>
                 <div>예매율 7.9%</div>
@@ -98,7 +98,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="웅남이.jpeg"  alt="웅남이"> <p class="text">웅남이</p>
+        <div id="jpeg"><img src="../imgs/웅남이.jpeg"  alt="웅남이"> <p class="text">웅남이</p>
             <div>
                 <div>평점 : 96% </div>
                 <div>예매율 7.7%</div>
@@ -106,7 +106,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="치킨래빗.jpeg"  alt="치킨래빗"> <p class="text">치킨래빗</p>
+        <div id="jpeg"><img src="../imgs/치킨래빗.jpeg"  alt="치킨래빗"> <p class="text">치킨래빗</p>
             <div>
                 <div>평점 : 98% </div>
                 <div>예매율 4.4%</div>
@@ -114,7 +114,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="플레인.jpeg"  alt="플레인"> <p class="text">플레인</p>
+        <div id="jpeg"><img src="../imgs/플레인.jpeg"  alt="플레인"> <p class="text">플레인</p>
             <div>
                 <div>평점 : 95% </div>
                 <div>예매율 3.8%</div>
@@ -122,7 +122,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="귀멸의 칼날.jpeg"  alt="귀멸의칼날"> <p class="text">귀멸의 칼날</p>
+        <div id="jpeg"><img src="../imgs/귀멸의 칼날.jpeg"  alt="귀멸의칼날"> <p class="text">귀멸의 칼날</p>
             <div>
                 <div>평점 : 81 %</div>
                 <div>예매율 3.3%</div>
@@ -130,7 +130,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="에브리씽.jpeg"  alt="에브리씽"> <p class="text">에브리씽</p>
+        <div id="jpeg"><img src="../imgs/에브리씽.jpeg"  alt="에브리씽"> <p class="text">에브리씽</p>
             <div>
                 <div>평점 : 92% </div>
                 <div>예매율 2.2%</div>

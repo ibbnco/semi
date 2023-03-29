@@ -55,7 +55,7 @@
   <div class="header_menu">
     <section>
       <ul>
-        <li><a href="momain.html">영화</a></li>
+        <li><a href="momain.jsp">영화</a></li>
         <li><a href="">예매</a></li>
         <li><a href="">극장</a></li>
         <li><a href="">스토어</a></li>
@@ -158,27 +158,27 @@
     <div>
       <img style="margin: auto;" src="../imgs/스즈메 평점1.png" alt="평점">
     </div>
-  <div class="container">
+   <div class="container">
       <div class="row">
-         <form method="post" action="writeAction.jsp">
-            <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
-               <thead>
-                  <tr>
-                     <th colspan="2" style="background-color: #eeeeee; text-align: center;">리뷰</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
-                  </tr>
-                  <tr>
-                     <td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea></td>
-                  </tr>
-               </tbody>
-            </table>
-
-            <input type="submit" class="btn btn-primary pull-right" value="글쓰기">
-         </form>
+         <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+            <thead>
+               <tr>
+                  <th style="background-color: #eeeeee; text-align: center;">번호</th>
+                  <th style="background-color: #eeeeee; text-align: center;">제목</th>
+                  <th style="background-color: #eeeeee; text-align: center;">작성자</th>
+                  <th style="background-color: #eeeeee; text-align: center;">작성일</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td>안녕하세요</td>
+                  <td>홍길동</td>
+                  <td>2023-03-29</td>
+               </tr>
+            </tbody>
+         </table>
+         <a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
       </div>
    </div>
   </div>

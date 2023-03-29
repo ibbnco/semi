@@ -22,10 +22,6 @@
   <script src="../syjs/detailpage.js"></script>
 </head>
 <body>
-   <nav class="navbar navbar-default"> 
-      <div class="navbar-header">    
-      </div>
-   </nav>
    <div class="container">
       <div class="row">
          <form method="post" action="writeAction.jsp">
@@ -44,7 +40,6 @@
                   </tr>
                </tbody>
             </table>
-
             <input type="submit" class="btn btn-primary pull-right" value="글쓰기">
          </form>
       </div>
