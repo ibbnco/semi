@@ -10,7 +10,7 @@ import semi.util.page.PageVo;
 
 public class PaymentService {
 
-	public List<PaymentVo> ticketList(PageVo pageVo) {
+	public List<PaymentVo> ticketList(PageVo pageVo) throws Exception {
 		//비지니스 로직
 		
 		//conn
@@ -27,7 +27,7 @@ public class PaymentService {
 		return ticketing;
 	}
 
-	public int ticketCount() {
+	public int ticketCount() throws Exception {
 
 		//conn
 		Connection conn = JDBCTemplate.getConnection();

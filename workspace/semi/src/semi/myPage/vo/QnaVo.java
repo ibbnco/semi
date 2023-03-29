@@ -11,6 +11,7 @@ public class QnaVo {
 	private String	qnaAnswerDate;
 	private String	memberNo;
 	private String	adminNo;
+	
 	public String getQnaNo() {
 		return qnaNo;
 	}

@@ -17,7 +17,7 @@
             
             <div class="inner_content" >
                 <div class="inner_title">나의 예매 내역</div>
-                <form action="/myPage/ticketing" method="post"></form>
+                <form action="/myPage/ticketing" method="post">
                 <table>
                     <tr>
                         <td rowspan="4">포스터</td>
@@ -30,10 +30,10 @@
                         <td>상영관,인원</td>
                     </tr>
                     <tr>
-                        <td><a href="">리뷰쓰기</a></td>
+                        <td><a href="/myPage/reviewWrite">리뷰쓰기</a></td>
                     </tr>
                 </table>
-               
+               </form>
             </div>
 
         </div>

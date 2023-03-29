@@ -37,14 +37,14 @@
 	
 	<div class="menuBar">
                 <ul>
-                    <a href="/myPage/ticketing">나의 예매 내역</a><br>
-                    <a href="/myPage/dibs">찜한 영화</a><br>
-                    <a href="/myPage/review">내가 쓴 리뷰</a><br>
-                    <a href="/myPage/point">포인트 내역</a><br>
-                    <a href="/myPage/payment">결제내역</a><br>
-                    <a href="/WEB-INF/views/member/info.jsp">회원정보 확인</a><br>
+                    <a href="/myPage/ticketing?page=1">나의 예매 내역</a><br>
+                    <a href="/myPage/dibs?page=1">찜한 영화</a><br>
+                    <a href="/myPage/review?page=1">내가 쓴 리뷰</a><br>
+                    <a href="/myPage/point?page=1">포인트 내역</a><br>
+                    <a href="/myPage/payment?page=1">결제내역</a><br>
+                    <a href="/member/info">회원정보 확인</a><br>
                     <a href="/member/quit">회원탈퇴</a><br>
-                    <a href="/myPage/qnaList">1:1 문의</a><br>
+                    <a href="/myPage/qnaList?page=1">1:1 문의</a><br>
                 </ul>
             </div>
 </body>

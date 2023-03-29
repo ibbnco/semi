@@ -84,11 +84,12 @@ public class QnaDao {
 		
 	}
 
-	public QnaVo qnaDetail(Connection conn , QnaVo vo) throws Exception {
+	public QnaVo qnaDetail(Connection conn , String no) throws Exception {
 		//sql
-		String sql = "SELECT Q.QNA_NO , Q.QNA_TITLE , Q.QNA_CONTENT , Q.QNA_DATE ,Q.QNA_ANSWER,M.MEMBER_NO FROM QNA Q JOIN MEMBER M ON (Q.MEMBER_NO = M.MEMBER_NO) WHERE Q.QNA_NO = ? AND Q.QNA_DEL_STATUS = 'N'";
+		String sql = "SELECT QNA_NO,QNA_TITLE , QNA_DATE ,QNA_CONTENT ,QNA_ANSWER FROM QNA WHERE QNA_NO = ? AND QNA_DEL_STATUS = 'N'";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1,vo.getQnaNo());
+		pstmt.setString(1,"1");
+		System.out.println(no);
 		ResultSet rs = pstmt.executeQuery();
 		
 		//rs -> obj
@@ -99,6 +100,9 @@ public class QnaDao {
 	         String qnaContent = rs.getString("QNA_CONTENT");
 	         String qnaDate = rs.getString("QNA_DATE");
 	         String qnaAnswer = rs.getString("QNA_ANSWER");
+	         String qnaAnswerDate = rs.getString("QNA_ANSWER_DATE");
+	         String memberNo = rs.getString("MEMBER_NO");
+	         String adminNo = rs.getString("ADMIN_NO");
 	         
 	         qnaVo = new QnaVo();
 	         qnaVo.setQnaNo(qnaNo);
@@ -106,8 +110,11 @@ public class QnaDao {
 	         qnaVo.setQnaContent(qnaContent);
 	         qnaVo.setQnaDate(qnaDate);
 	         qnaVo.setQnaAnswer(qnaAnswer);
-	         
+	         qnaVo.setQnaAnswerDate(qnaAnswerDate);
+	         qnaVo.setMemberNo(memberNo);
+	         qnaVo.setAdminNo(adminNo);
 			
+	         
 		}
 		
 		//close
