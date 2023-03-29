@@ -36,11 +36,11 @@
         </header>
             <div class="header_menu">
                 <ul>
-                    <li ><a href="영화 페이지">영화</a></li>
-                    <li ><a href="영화예매 페이지">예매</a></li>
-                    <li ><a href="극장소개 페이지">극장</a></li>
-                    <li ><a href="매점 페이지">스토어</a></li>
-                    <li ><a href="이벤트 페이지">이벤트</a></li>
+                    <li><a href="영화 페이지">영화</a></li>
+                    <li><a href="영화예매 페이지">예매</a></li>
+                    <li><a href="극장소개 페이지">극장</a></li>
+                    <li><a href="/store/main">스토어</a></li>
+                    <li><a href="이벤트 페이지">이벤트</a></li>
                 </ul>
             </div>
         

@@ -79,7 +79,7 @@
     </div> 
 	
     <div id="main">
-        <table border="0"  id="store">
+        <table border="0" id="store">
             <tr><td id="detail" class="line">커플콤보</td><td colspan="3"></td></tr>
             <tr><td><span class="des">사이좋은 커플을 위한 콤보</span></td></tr>
             <tr><td rowspan="3"><img src="/images/combo2.jpg" alt="" width="400px" height="400px"></td>

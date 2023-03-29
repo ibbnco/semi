@@ -10,7 +10,7 @@
 <c:remove var="alertMsg"/>
 
 <title>NEWBMOVIE</title>
-<link rel="stylesheet" href="/logoHeader2.css">
+<link rel="stylesheet" href="/logoHeader3.css">
 
     <header class="header">
         <div>
