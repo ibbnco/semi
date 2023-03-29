@@ -180,8 +180,73 @@ public class MemberDao {
 		pstmt.setString(2, vo.getMemberPwd());
 		int result = pstmt.executeUpdate();
 		
-			
+		JDBCTemplate.close(conn);	
+		
 		return result;
+	}
+
+
+	public int edit(Connection conn, MemberVo vo) throws Exception {
+
+		String sql = "UPDATE Member SET MEMBER_PWD = ?, MEMBER_NICK = ?,  MEMBER_EMAIL = ?,  MEMBER_TEL = ? WHERE MEMBER_ID = ? AND MEMBER_NAME = ?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, vo.getMemberPwd());
+		pstmt.setString(2, vo.getMemberNick());
+		pstmt.setString(3, vo.getMemberEmail());
+		pstmt.setString(4, vo.getMemberTel());
+		pstmt.setString(5, vo.getMemberId());
+		pstmt.setString(6, vo.getMemberName());
+		int result = pstmt.executeUpdate();
+		
+		JDBCTemplate.close(conn);	
+		
+		return result;
+	}
+
+
+	public MemberVo check(Connection conn,  String no) throws Exception {
+		
+		String sql = "SELECT MEMBER_ID , MEMBER_NAME , MEMBER_NICK , MEMBER_EMAIL , MEMBER_TEL  FROM MEMBER WHERE MEMBER_NO = ? AND QUIT_YN = 'N'";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, no);
+		ResultSet rs = pstmt.executeQuery();
+		
+		MemberVo checkVo = null;
+		if (rs.next()) {
+			String memberNo = rs.getString("MEMBER_NO");
+	         String memberId = rs.getString("MEMBER_ID");
+	         String memberPwd = rs.getString("MEMBER_PWD");
+	         String memberName = rs.getString("MEMBER_NAME");
+	         String memberNick = rs.getString("MEMBER_NICK");
+	         String memberTel = rs.getString("MEMBER_TEL");
+	         String memberEmail = rs.getString("MEMBER_EMAIL");
+	         String quitYn = rs.getString("QUIT_YN");
+	         String memberGrade = rs.getString("MEMBER_GRADE");
+	         String enrollDate = rs.getString("ENROLL_DATE");
+	         String memberPoint = rs.getString("MEMBER_POINT");
+	         String gradeNo = rs.getString("GRADE_NO");
+	         String memberImg = rs.getString("MEMBER_IMG");
+	         
+	         checkVo.setMemberNo(memberNo);
+	         checkVo.setMemberNo(memberNo);
+	         checkVo.setMemberId(memberId);
+	         checkVo.setMemberPwd(memberPwd);
+	         checkVo.setMemberName(memberName);
+	         checkVo.setMemberNick(memberNick);
+	         checkVo.setMemberTel(memberTel);
+	         checkVo.setMemberEmail(memberEmail);
+	         checkVo.setQuitYn(quitYn);
+	         checkVo.setMemberGrade(memberGrade);
+	         checkVo.setEnrollDate(enrollDate);
+	         checkVo.setMemberPoint(memberPoint);
+	         checkVo.setGradeNo(gradeNo);
+	         checkVo.setMemberImg(memberImg);
+		}
+		
+		JDBCTemplate.close(pstmt);
+		JDBCTemplate.close(rs);
+		
+		return checkVo;
 	}
 
 

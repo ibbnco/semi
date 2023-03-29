@@ -82,15 +82,15 @@
     </div> 
 	
 	<div id="main">
-        <table border="0"  id="store">
+        <table id="store">
             <tr><td id="detail" class="line">핑크 에이드</td><td colspan="3"></td></tr>
             <tr><td><span class="des">상큼한 레몬맛 핑크 에이드</span></td></tr>
             <tr><td rowspan="3"><img src="/images/pinkade.jpg" alt="" width="315px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td>
                 <td>&nbsp;&nbsp;￦3,500<br><br>&nbsp;&nbsp;핑크 에이드 1개<br><br>&nbsp;&nbsp;레몬즙:스페인산</td></tr>
-            <tr><td colspan="3"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

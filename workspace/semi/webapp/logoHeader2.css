@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+	#wrapper{
+	    width: 1200px;
+	    height: 100vh;
+	    box-sizing: border-box;
+	    margin: auto;
+	}
+	
+	a{
+	    text-decoration-line: none;
+	}
+	a:link { color:cornflowerblue ; text-decoration: none;}
+	a:visited { color: cornflowerblue; text-decoration: none;}
+	a:hover { color: #104E86; text-decoration: none;}
+	
+	p{
+	    margin-top: 0%;
+	    margin-bottom: 10px;
+	}
+	.header {
+	    height: 135px;
+	    box-sizing: border-box;
+	    border-bottom: 1px solid #78B9E9;
+	    display: grid;
+	    justify-content: center;
+	    grid-template-columns: 1fr 4fr 3fr;
+	    
+	}
+	
+	.join{
+	    display: flex;
+	    justify-content: space-evenly;
+	}
+	
+	.header_menu a.active{
+	    background-color: azure;
+	}
+	
+	
+	.header_menu div{
+	    text-align: center;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;;
+	}
+	
+	.header_menu ul {
+	    text-align: center;
+	   
+	}
+	
+	.header_menu ul li {
+	    display: inline-block;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	}
+	
+	.header_menu ul li a {
+	    display: block;
+	    font: bold 25px 'arial';
+	    margin: 10px 16px 10px 16px;
+	    letter-spacing: 1px;
+	}
+	.logo {
+	    width: 100px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	
+	.mypage {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr 1fr 1fr;
+	    place-items: center;
+	    font-size: 12px;
+	}
+	.mypage:last-child {
+	    padding-right: 50px;
+	}
+	.text {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	#logo {
+	    display: grid;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+
+  #menuname{
+        float: left;
+        font-size: x-large;
+        font-weight: bolder;
+        color: #104E86;
+    }
+
+    div>ul>li {
+        display: inline;
+    }
+
+    div>ul{
+    	display: inline;
+        float: right;
+    }
+
+    div>li{
+   	 	display: inline;
+        float: left;
+    }
+
+    body{
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    .cart {
+        width: 80%;
+        position: left;
+        padding: 30px;
+    }
+
+    .cart ul {
+        padding: 30px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .cart ul :first-child {
+        color: #104E86;
+        font-weight: bold;
+        }
+    
+    .cartlist_detail:nth-child(3) {
+        vertical-align: top;
+    }
+
+    .cartlist_detail:nth-child(3) a {
+        font-size: 12px;
+    }
+
+    .cartlist_detail:nth-child(3) p {
+        margin-top: 6px;
+        font-weight: bold;
+    }
+
+    .cartlist_store {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .cartlist_option {
+        padding: 20px;
+    }
+
+    .cartlist_detail :nth-child(4),
+    .cartlist_detail :nth-child(5),
+    .cartlist_detail :nth-child(6) {
+        border-left: 2px solid whitesmoke;
+    }
+    .cartlist_detail :nth-child(1),
+    .cartlist_detail :nth-child(2),
+    .cartlist_detail :nth-child(4),
+    .cartlist_detail :nth-child(5),
+    .cartlist_detail :nth-child(6) {
+        text-align: center;
+    }
+
+    .cartlist_detail :nth-child(5) button {
+        background-color: #104E86;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .cartlist_optionbtn{
+        background-color: aliceblue;
+        color: #104E86;
+        border: none;   
+    }
+
+    .cart_mainbtns {
+        width: 420px;
+        height: 100px;
+        padding-top: 40px;
+        display: block;
+        margin: auto;
+    }
+
+    .cart_orderbtn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .cart_orderbtn.left {
+        background-color: #CAD7E4;
+        color: white;
+        border: none;
+    }
+
+    .cart_orderbtn.right {
+        background-color: #104E86;
+        color: white;
+        border: none;
+    }
+
+    table {
+        border-top: solid 1.5px black;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    thead {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    tbody {
+        font-size: 12px;
+    }
+
+    td {
+        padding: 15px 0px;
+        border-bottom: 1px solid lightgrey;
+    }

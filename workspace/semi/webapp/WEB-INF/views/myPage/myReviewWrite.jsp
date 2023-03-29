@@ -11,6 +11,7 @@
 	<h2>리뷰쓰기</h2>
 	<textarea id = "reviwe" name="review" rows="10" cols="30"></textarea>
 	<div id="review_cnt">(0/100)</div>
+	<button onclick="reviewWrite();">작성하기</button>
 	
 	<script>
 	$(document).ready(function() {
@@ -24,6 +25,11 @@
 	    });
 	});
 
+	 function reviewWrite() {
+        const parentInput = window.opener.document.querySelector("input[name=memberId]");
+        const popupInput = document.querySelector("input[name=memberId]");
+        parentInput.value = popupInput.value;
+     }
 	</script>
 </body>
 </html>

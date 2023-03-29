@@ -86,5 +86,34 @@ public class MemberService {
 		return result;
 	}
 
+	public int edit(MemberVo vo) throws Exception {
+		
+		Connection conn = JDBCTemplate.getConnection();
+		
+		MemberDao dao = new MemberDao();
+		int result = dao.edit(conn,vo);
+		
+		JDBCTemplate.close(conn);
+		
+		return result;
+		
+		
+		
+	}
+
+	public MemberVo check(String no) throws Exception {
+
+	Connection conn = JDBCTemplate.getConnection();
+	
+	MemberDao dao = new MemberDao();
+	MemberVo check = dao.check(conn,no);
+	
+	JDBCTemplate.commit(conn);
+	JDBCTemplate.close(conn);
+	
+	return check;
+		
+	}
+
 }
 

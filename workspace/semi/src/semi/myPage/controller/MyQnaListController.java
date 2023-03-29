@@ -41,7 +41,7 @@ public class MyQnaListController extends HttpServlet{
 				//화면
 				req.setAttribute("qnaList", qnaList);
 				req.setAttribute("pageVo", pageVo);
-				req.getRequestDispatcher("/WEB-INF/views/myPage/myQna.jsp").forward(req, resp);
+				req.getRequestDispatcher("/WEB-INF/views/myPage/myQnaList.jsp").forward(req, resp);
 				
 			} catch (Exception e) {
 				System.out.println("[ERROR] 1:1 문의 조회 중 예외발생");

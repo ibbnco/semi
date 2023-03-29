@@ -69,7 +69,7 @@ public class QnaService {
 		return result;
 	}
 
-	public QnaVo qnaDetail(String qnaNo) throws Exception {
+	public QnaVo qnaDetail(String no) throws Exception {
 	//비지니스 로직
 		
 		//conn
@@ -77,7 +77,7 @@ public class QnaService {
 		
 		//sql dao(조회쿼리)
 		QnaDao dao = new QnaDao();
-		QnaVo qnaVo = dao.qnaDetail(conn,vo);
+		QnaVo qnaVo = dao.qnaDetail(conn,no);
 		
 		
 		//tx,close

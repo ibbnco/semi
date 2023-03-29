@@ -19,18 +19,18 @@ public class MyQnaDetailController extends HttpServlet{
 		try {
 			
 			//데이터 꺼내기
-			String qnaNo = req.getParameter("qnaNo");
+			String no = req.getParameter("qnaNo");
 			
 			//데이터 뭉치기
 			
 			//서비스 호출
 			QnaService qs = new QnaService();
-			QnaVo vo = qs.qnaDetail(vo);
+			QnaVo qnaVo = qs.qnaDetail(no);
 			
 			//test
-			System.out.println(vo);
-			//화면
-			req.setAttribute("QnaVo", vo);
+			System.out.println(qnaVo);
+			//화면  
+			req.setAttribute("qnaVo", qnaVo);
 			req.getRequestDispatcher("/WEB-INF/views/myPage/myQnaDetail.jsp").forward(req, resp);
 		
 			

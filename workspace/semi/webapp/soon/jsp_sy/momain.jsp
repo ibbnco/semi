@@ -9,7 +9,8 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="icon" href="img/movielogo.png">
     <style>
         a {
             text-decoration-line: none;
@@ -188,19 +189,19 @@
             <div>NEWBMOVIE</div>
         </div>
         <div>
-            <img class="logo" src="movielogo.png" alt="logo">
+            <img class="logo" src="../imgs/movielogo.png" alt="logo">
         </div>
         <div class="mypage">
-            <a href="#" target='blank'><img src="회원가입.png" alt="join">
+            <a href="#" target='blank'><img src="../imgs/회원가입.png" alt="join">
                 <p class="text">회원가입</p>
             </a>
-            <a href="#" target='blank'><img src="로그인.png" alt="login">
+            <a href="#" target='blank'><img src="../imgs/로그인.png" alt="login">
                 <p class="text">로그인</p>
             </a>
-            <a href="#" target='blank'><img src="마이페이지.png" alt="mypage">
+            <a href="#" target='blank'><img src="../imgs/마이페이지.png" alt="mypage">
                 <p class="text">마이페이지</p>
             </a>
-            <a href="#" target='blank'><img src="고객센터.png" alt="servicecenter">
+            <a href="#" target='blank'><img src="../imgs/고객센터.png" alt="servicecenter">
                 <p class="text">고객센터</p>
             </a>
         </div>
@@ -208,27 +209,27 @@
     <div class="header_menu">
         <section>
             <ul class="bo">
-                <li><a href="movie.html">영화</a></li>
+                <li><a href="moviec.jsp">영화</a></li>
                 <li><a href="">예매</a></li>
                 <li><a href="">극장</a></li>
                 <li><a href="">스토어</a></li>
                 <li><a href="이벤트페이지.html">이벤트</a></li>
             </ul>
     </div>
-    <a href="movie.html">
+    <a href="moviec.jsp">
         <h2>무비차트</h2>
     </a>
     <div class="slider">
-        <div><a href="detail page.html"><img src="스즈메의 문단속.jpeg" alt=""></div></a>
-        <div><a href="detail page2.html"><img src="더 퍼스트 슬램덩크.jpeg" alt=""></div></a>
-        <div><a href="detail page3.html"><img src="소울메이트.jpeg" alt=""></div></a>
-        <div><a href="detail page4.html"><img src="아임 히어로 더 파이널.jpeg" alt=""></div></a>
-        <div><a href="detail page5.html"><img src="샤잠! 신들의 분노.jpeg" alt=""></div></a>
-        <div><a href="detail page6.html"><img src="웅남이.jpeg" alt=""></div></a>
-        <div><a href="detail page7.html"><img src="치킨래빗.jpeg" alt=""></div></a>
-        <div><a href="detail page8.html"><img src="플레인.jpeg" alt=""></div></a>
-        <div><a href="detail page9.html"><img src="귀멸의 칼날.jpeg" alt=""></div></a>
-        <div><a href="detail page10.html"><img src="에브리씽.jpeg" alt=""></div></a>
+        <div><a href="detailpage.jsp"><img src="../imgs/스즈메의 문단속.jpeg" alt=""></div></a>
+        <div><a href="detailpage2.jsp"><img src="../imgs/더 퍼스트 슬램덩크.jpeg" alt=""></div></a>
+        <div><a href="detailpage3.jsp"><img src="../imgs/소울메이트.jpeg" alt=""></div></a>
+        <div><a href="detailpage4.jsp"><img src="../imgs/아임 히어로 더 파이널.jpeg" alt=""></div></a>
+        <div><a href="detailpage5.jsp"><img src="../imgs/샤잠! 신들의 분노.jpeg" alt=""></div></a>
+        <div><a href="detailpage6.jsp"><img src="../imgs/웅남이.jpeg" alt=""></div></a>
+        <div><a href="detailpage7.jsp"><img src="../imgs/치킨래빗.jpeg" alt=""></div></a>
+        <div><a href="detailpage8.jsp"><img src="../imgs/플레인.jpeg" alt=""></div></a>
+        <div><a href="detailpage9.jsp"><img src="../imgs/귀멸의 칼날.jpeg" alt=""></div></a>
+        <div><a href="detailpage10.jsp"><img src="../imgs/에브리씽.jpeg" alt=""></div></a>
     </div>
     <footer>
         <input class="topBtn" type="button" value="TOP" style="cursor:pointer;" onclick="window.scrollTo(0,0);">

@@ -85,9 +85,9 @@
             <tr><td><span class="des">고소한 치즈가 들어간 팝콘</span></td></tr>
             <tr><td rowspan="3"><img src="/images/치즈팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td><td>￦5,500<br><br>치즈 팝콘 1개<br><br>체다치즈:뉴질랜드산</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

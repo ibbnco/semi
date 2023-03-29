@@ -26,7 +26,7 @@ public class BoardListController extends HttpServlet{
 		System.out.println(boardList);
 		
 		req.setAttribute("boardList", boardList);
-		req.getRequestDispatcher("/01_store_main2.jsp").forward(req, resp);
+		req.getRequestDispatcher("/02_store_buy_pop.jsp").forward(req, resp);
 		
 	}
 	
