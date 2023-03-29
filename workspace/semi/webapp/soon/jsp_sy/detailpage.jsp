@@ -140,7 +140,7 @@
         <h2 class="text-2xl mb-3">예고편</h2>
         <div>
           <a href="http://h.vod.cgv.co.kr/vodCGVa/86815/86815_212072_1200_128_960_540.mp4">
-            <img src="../imgs/스즈메 예고편.png" alt="예고편" />
+            <img src="../imgs/스즈메예고편.png" alt="예고편" />
           </a>
         </div>
       </div>

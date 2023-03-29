@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("../jsp_sy/review1.jsp")
+@WebServlet("")
 public class WriteReviewServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 	
@@ -46,7 +46,7 @@ public class WriteReviewServlet extends HttpServlet {
 
       int result = pstmt.executeUpdate();
       if (result == 1) {
-        response.sendRedirect(request.getContextPath() + "/reviews.jsp");
+        response.sendRedirect(request.getContextPath() + "/review.jsp");
       } else {
         response.sendRedirect(request.getContextPath() + "/error.jsp");
       }

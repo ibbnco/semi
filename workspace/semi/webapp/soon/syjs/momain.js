@@ -22,3 +22,28 @@ $(document).ready(function () {
         ]
     });
 });
+
+$(document).ready(function () {
+    $('.ff').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+});
