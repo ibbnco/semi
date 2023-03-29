@@ -342,21 +342,21 @@
         <div style="text-align: center;"><img src="../imgs/에 어.jpeg" alt="">에어</div></a>
         <div style="text-align: center;"><img src="../imgs/거울.jpeg" alt="">거울속의외딴성</div></a>
         <div style="text-align: center;"><img src="../imgs/인어공주.jpeg" alt="">인어공주</div></a>
-        <div style="text-align: center;"><img src="../imgs/클로즈.jpeg" alt="">클로즈</div></a>
-        <div style="text-align: center;"><img src="../imgs/곰돌이푸.jpeg" alt="">곰돌이푸</div></a>
-        <div style="text-align: center;"><img src="../imgs/옥수역귀신.jpeg" alt="">옥수역귀신</div></a>
-        <div style="text-align: center;"><img src="../imgs/드림.jpeg" alt="">드림</div></a>
-        <div style="text-align: center;"><img src="../imgs/리바운드.jpeg" alt="">리바운드</div></a>
+        <div style="text-align: center;"><img src="../imgs/클 로즈.jpeg" alt="">클로즈</div></a>
+        <div style="text-align: center;"><img src="../imgs/곰 돌이푸.jpeg" alt="">곰돌이푸</div></a>
+        <div style="text-align: center;"><img src="../imgs/옥 수역귀신.jpeg" alt="">옥수역귀신</div></a>
+        <div style="text-align: center;"><img src="../imgs/드 림.jpeg" alt="">드림</div></a>
+        <div style="text-align: center;"><img src="../imgs/리 바운드.jpeg" alt="">리바운드</div></a>
         <div style="text-align: center;"><img src="../imgs/왕별.jpeg" alt="">패왕별회</div></a>
     </div>
     <h2 style="color: #78B9E9;">이벤트</h2>
     <div style="color: #104E86;" class="ff">
         <div style="text-align: center;"><img src="../imgs/개봉작이벤트.jpeg" alt="">개봉작 설명서</div></a>
-        <div style="text-align: center;"><img src="../imgs/예매오픈이벤트.jpeg" alt="">예매 오픈 알림 서비스</div></a>
-        <div style="text-align: center;"><img src="../imgs/슬램덩크이벤트2.jpeg" alt="">유니폼 키링 재판매</div></a>
-        <div style="text-align: center;"><img src="../imgs/만우절이벤트.jpeg" alt="">만우절 이벤트</div></a>
-        <div style="text-align: center;"><img src="../imgs/슬램덩크이벤트.jpeg" alt="">슬램덩크 응원 상영회</div></a>
-        <div style="text-align: center;"><img src="../imgs/스즈메이벤트.jpeg" alt="">4DX 특별포스터</div></a>
+        <div style="text-align: center;"><img src="../imgs/예 매오픈이벤트.jpeg" alt="">예매 오픈 알림 서비스</div></a>
+        <div style="text-align: center;"><img src="../imgs/슬 램덩크이벤트2.jpeg" alt="">유니폼 키링 재판매</div></a>
+        <div style="text-align: center;"><img src="../imgs/만 우절이벤트.jpeg" alt="">만우절 이벤트</div></a>
+        <div style="text-align: center;"><img src="../imgs/슬 램덩크이벤트.jpeg" alt="">슬램덩크 응원 상영회</div></a>
+        <div style="text-align: center;"><img src="../imgs/스 즈메이벤트.jpeg" alt="">4DX 특별포스터</div></a>
     </div>
     <footer>
         <input class = "topBtn" type="button" value="TOP" style="cursor:pointer;" onclick="window.scrollTo(0,0);">
