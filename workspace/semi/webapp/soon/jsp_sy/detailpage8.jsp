@@ -127,7 +127,7 @@
                 <h2 class="text-2xl mb-3">예고편</h2>
                 <div>
                     <a href="http://h.vod.cgv.co.kr/vodCGVa/86830/86830_212936_1200_128_960_540.mp4">
-                        <img src="../imgs/플레인 예고편.png" alt="예고편" />
+                        <img src="../imgs/플레인예고편.png" alt="예고편" />
                     </a>
                 </div>
             </div>

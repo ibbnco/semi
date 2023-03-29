@@ -124,7 +124,7 @@
                 <h2 class="text-2xl mb-3">예고편</h2>
                 <div>
                     <a href="https://youtu.be/9-7GTax6FpA">
-                        <img src="../imgs/귀멸의칼날 예고편.png" alt="예고편" />
+                        <img src="../imgs/귀멸의칼날예고편.png" alt="예고편" />
                     </a>
                 </div>
             </div>
