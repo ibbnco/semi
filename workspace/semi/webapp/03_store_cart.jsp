@@ -11,10 +11,10 @@
 </style>
 </head>
 <body>
-<%-- <div id="wrapper">
-<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %></div> --%>
+
 
 	<%@ include file="payHeader.jsp" %>
+	
     <div id="menuname">
         <ul>
             <li>장바구니 Cart</li><br>
@@ -29,14 +29,14 @@
         </ul>
     </div>
     <div class="cartlist">
-        <table>
+        <table>		
             <thead>
             	<tr>
-                <th><input type="checkbox" id="chkAll" name="chkAll"></th>
-                    <th colspan="2">상품명</th>
-                    <th>판매금액</th>
-                    <th>수량</th>
-                    <th>구매금액</th>
+                <td><input type="checkbox" id="checkbox-all" name="chkAll"></td>
+                    <td colspan="2">상품명</td>
+                    <td>판매금액</td>
+                    <td>수량</td>
+                    <td>구매금액</td>
                 </tr>
             </thead>
             <tbody>
@@ -64,6 +64,16 @@
             <button class="cart_orderbtn right" onclick="location.href='03_store_payment.jsp';">구매하기</button>
         </div>
     <footer><%@ include file="footer.jsp" %></footer>
+		<script>
+		    const all = document.querySelector("#checkbox-all");
+		    	all.addEventListener("click",(x)=>{
+		        const status = x.target.checked;
+		        const checkBoxArr = document.querySelectorAll(".chk");
+		        for(let box of checkBoxArr){
+		            box.checked = status;
+		        }		            
+		    });
+		</script>
 </body>
 </html>
 

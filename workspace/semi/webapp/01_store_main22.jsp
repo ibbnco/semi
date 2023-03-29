@@ -46,8 +46,8 @@
 			<tfoot>		
             	<tr>
 		            <c:forEach items="${boardList}" var="bvo" varStatus="s">
-			            <c:if test="${s.index >= 3}">
-			            <td></td>
+			            <c:if test="${s.index >=3}">
+						<td></td>
 						<td>${bvo.productName}</td>
 						<td>${bvo.productPrice}</td>
 						</c:if>
