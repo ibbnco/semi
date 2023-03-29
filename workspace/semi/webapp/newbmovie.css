@@ -98,7 +98,12 @@
 	#main_detail{
 		padding-bottom: 5%;
 	}
-	
+	 #menuname{
+        float: left;
+        font-size: x-large;
+        font-weight: bolder;
+        color: #104E86;
+    }
 	#store{
 	    width: 100%;
 	    height: 100%;

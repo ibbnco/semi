@@ -2,15 +2,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-	<c:if test="${alertMsg != null }">
-		<script>
-			alert('${alertMsg}');
-		</script>
-	</c:if>
-	<c:remove var="alertMsg"/>
+<c:if test="${alertMsg != null }">
+	<script>
+		alert('${alertMsg}');
+	</script>
+</c:if>
+<c:remove var="alertMsg"/>
 
-	<title>NEWBMOVIE</title>
-	<link rel="stylesheet" href="payHeader.css">
+<title>NEWBMOVIE</title>
+<link rel="stylesheet" href="/logoHeader2.css">
 
     <header class="header">
         <div>
@@ -44,3 +44,4 @@
                 </ul>
             </div>
         
+	

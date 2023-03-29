@@ -12,8 +12,7 @@
 </head>
 <body>
 
-
-	<%@ include file="payHeader.jsp" %>
+	<%@ include file="logoHeader2.jsp" %>
 	
     <div id="menuname">
         <ul>
@@ -74,8 +73,5 @@
 		        }		            
 		    });
 		</script>
-</body>
-</html>
-
 </body>
 </html>

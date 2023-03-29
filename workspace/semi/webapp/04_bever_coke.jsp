@@ -41,34 +41,15 @@
     .line{
         border-bottom: 1px solid #104E86;
     }
-	.cart_orderbtn {
-        width: 200px;
-        height: 50px;
-        margin: 0 auto;
-        border: none;
-        border-radius: 5px;
-        align-text: center;
-    }
 
     .cart_orderbtn.left{
         font-size: 16px;
         background-color: #CAD7E4;
         color: white;
  	}
-    #table3{
-        text-align: center;
-    }
-	
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}
 </style>
 </head>
 <body>
-<%-- <div id="wrapper">
-<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %></div> --%>
 
 	<%@ include file="logoHeader.jsp" %>
 	
@@ -79,7 +60,7 @@
     </div> 
 	
     <div id="main">
-        <table border="0" id="store">
+        <table id="store">
             <tr><td id="detail" class="line">콜라</td><td colspan="3"></td></tr>
             <tr><td><span class="des">영화관 하면 생각나는 기본 음료</span></td></tr>
             <tr><td rowspan="3"><img src="/images/coke.png" alt="" width="280px" height="280px"></td>
@@ -88,6 +69,6 @@
             <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>
