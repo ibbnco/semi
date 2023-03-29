@@ -59,11 +59,6 @@
         text-align: center;
     }
 	
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}
 </style>
 </head>
 <body>
@@ -84,8 +79,14 @@
             <tr><td rowspan="3"><img src="/images/팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td>
                 <td>&nbsp;&nbsp;￦4,500<br><br>&nbsp;&nbsp;오리지널 팝콘 1개<br><br>&nbsp;&nbsp;정제소금:국내산</td></tr>
-            <tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
+            <tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="handleOnClick()" value="alert">장바구니 추가</button></td></tr>
         </table>
+        <script>
+        	function handleOnClick()  {
+        	  alert('장바구니에 상품이 들어갔습니다.');
+        	  window.location.href = "/store/list";
+        	}
+        </script>
     </div>
     <footer><%@ include file="footer.jsp" %></footer>
 </body>

@@ -79,13 +79,13 @@
     </div> 
 	
     <div id="main">
-        <table border="0" id="store">
+        <table id="store">
             <tr><td id="detail" class="line">포스터</td><td colspan="3"></td></tr>
             <tr><td><span class="des"></span></td></tr>
             <tr><td rowspan="3"><img src="/images/slamduck.jpg" alt="" width="300px" height="300px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>설명</td>
                 <td>&nbsp;&nbsp;￦9,000<br><br>&nbsp;&nbsp;포스터 1개<br><br>&nbsp;&nbsp;슬램덩크 포스터</td></tr>
-			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr> 
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니 추가</button></td></tr> 
          </table>
     </div>
     <footer><%@ include file="footer.jsp" %></footer>

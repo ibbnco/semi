@@ -80,14 +80,14 @@
     </div> 
 	
     <div id="main">
-        <table border="0"  id="store">
+        <table id="store">
             <tr><td id="detail" class="line">아이스 아메리카노</td><td colspan="3"></td></tr>
             <tr><td><span class="des">영화보면서 힘내고 싶을 때</span></td></tr>
             <tr><td rowspan="3"><img src="/images/iceame.jpg" alt="" width="400px" height="300px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td>
                 <td>&nbsp;&nbsp;￦3,000<br><br>&nbsp;&nbsp;아이스 아메리카노 1개<br><br>&nbsp;&nbsp;원두:브라질산</td></tr>
-			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
-        </table>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니 추가</button></td></tr>
+        </table>      
     </div>
     <footer><%@ include file="footer.jsp" %></footer>
 </body>

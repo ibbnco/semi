@@ -4,11 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style type="text/css">
-	.count-wrap _count {
-		width: 50%
-	}
-</style>
 </head>
 <body>
 <div class="count-wrap _count">

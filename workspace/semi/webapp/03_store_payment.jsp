@@ -33,11 +33,8 @@
 <body>
   <!-- 상품 정보 영역-->
   <div class="title">상품 정보</div>
-  <p>오리지널 팝콘</p>
-  <p>결제 금액 : ￦4,500</p>
-  <form id="discount-point">
-    <input type="checkbox" id="point">3,000point 할인
-  </form>
+  <p>팝콘 , 프레첼</p>
+  <p>결제 금액 : ￦8,000</p>
   <hr>	
 
   <!-- 결제 방법 영역-->
