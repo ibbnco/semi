@@ -4,139 +4,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.css"
-        integrity="sha512-c0+vSv9tnGS4fzwTIBFPcdCZ0QwP+aTePvZeAJkYpbj67KvQ5+VrJjDh3lil48LILJxhICQf66dQ8t/BJyOo/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>NEWBMOVIE</title>
-    <link rel="icon" href="movielogo.png">
-    <script src="main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- slick -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <style>
-        .header {
-            height: 135px;
-            box-sizing: border-box;
-            border-bottom: 1px solid #78B9E9;
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .header_logo {
-            display: flex;
-            justify-content: left;
-            align-items: start;
-            font: bold 40px 'arial';
-            text-align: left;
-            padding-top: 14px;
-            color: cornflowerblue;
-            letter-spacing: 2px;
-            flex-direction: column;
-            position: relative;
-            height: 100px;
-        }
-
-        .header_menu a:hover {
-            background-color: cornflowerblue;
-        }
-
-        .header_menu a.active {
-            background-color: azure;
-        }
-
-
-        .header_menu div {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            ;
-        }
-
-        .header_menu ul {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .header_menu ul li {
-            display: inline-block;
-        }
-
-        .header_menu ul li a {
-            display: block;
-            font: bold 30px 'arial';
-            margin: 0px 16px;
-            letter-spacing: 1px;
-        }
-
-        .logo {
-            width: 100px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .mypage {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            place-items: center;
-        }
-
-        .mypage:last-child {
-            padding-right: 50px;
-        }
-
-        .text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #logo {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-        }
-
-        body {
-            padding-left: 120px;
-            padding-right: 120px;
-            height: 100%;
-        }
-
-        #mainimg {
-            max-width: 40%;
-            max-height: 40%;
-            border-radius: 10%;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            color: #444444;
-        }
-        footer {
-            clear: both;
-            background-color: #104E86;
-            margin-top: 30px;
-            padding: 10px;
-            text-align: left;
-            font-size: 20px;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>NEWBMOVIE</title>
+  <link rel="icon" href="movielogo.png">
+  <script src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- slick -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="../css_sy/detailpage.css">
+  <script src="../syjs/detailpage.js"></script>
 </head>
 
 <body>
@@ -271,21 +155,6 @@
             </footer>
         </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            // 팝업 띄우기
-            $('#open-overlay').click(function (e) {
-                $('#overlay').removeClass('visually-hidden');
-            });
-            // 팝업 삭제
-            $('#overlay').click(function (e) {
-                if (e.target === e.currentTarget) {
-                    $(this).addClass('visually-hidden');
-                }
-            });
-            $('.single-item').slick();
-        });
-    </script>
 </body>
 
 </html>

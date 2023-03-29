@@ -12,8 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>NEWBMOVIE</title>
     <link rel="icon" href="movielogo.png">
-    <link rel="stylesheet" href="newbmovie.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css_sy/newbmovie.css">
+    <link rel="stylesheet" href="../css_sy/main.css">
     <script src="main.js"></script>
 </head>
 <style>
@@ -35,13 +35,13 @@
         <p>NEWBMOVIE</p>
 </div>
 <div>
-    <img class="logo" src="movielogo.png" alt="logo">
+    <img class="logo" src="../imgs/movielogo.png" alt="logo">
 </div>
 <div class="mypage">
-    <a href="#" target='blank'><img src="../imgs/회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
-    <a href="#" target='blank'><img src="../imgs/로그인.png" alt="login"> <p class="text">로그인</p></a>
-    <a href="#" target='blank'><img src="/imgs/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
-    <a href="#" target='blank'><img src="고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
+    <a href="#" target='blank'><img src="../imgs/회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
+    <a href="#" target='blank'><img src="../imgs/로그인.png" alt="login"> <p class="text">로그인</p></a>
+    <a href="#" target='blank'><img src="../imgs/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+    <a href="#" target='blank'><img src="../imgs/고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
 </div>
 </header>
 <div class="header_menu">
@@ -58,7 +58,7 @@
     <h2>무비차트</h2>
     <div class="moviejp">
         
-        <div id="jpeg"><img src="스즈메의 문단속.jpeg"  alt="스즈메"> <p class="text">스즈메의 문단속</p>
+        <div id="jpeg"><img src="../imgs/스즈메의 문단속.jpeg"  alt="스즈메"> <p class="text">스즈메의 문단속</p>
             <div>
                 <div>평점 : 94% </div>
                 <div>예매율 29.5%</div>
@@ -66,7 +66,7 @@
                 <a href="momain.html" target='blank'><button>예매하기</button></a>
             </div>
         </div>
-        <div id="jpeg"><img src="더 퍼스트 슬램덩크.jpeg"  alt="슬팸덩크"> <p class="text">더 퍼스트 슬램덩크</p>
+        <div id="jpeg"><img src="../imgs/더 퍼스트 슬램덩크.jpeg"  alt="슬팸덩크"> <p class="text">더 퍼스트 슬램덩크</p>
             <div>
                 <div>평점 : 97% </div>
                 <div>예매율 15.2%</div>

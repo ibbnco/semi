@@ -8,12 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.css"
-    integrity="sha512-c0+vSv9tnGS4fzwTIBFPcdCZ0QwP+aTePvZeAJkYpbj67KvQ5+VrJjDh3lil48LILJxhICQf66dQ8t/BJyOo/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>NEWBMOVIE</title>
@@ -24,118 +18,8 @@
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <style>
-    .header {
-      height: 135px;
-      box-sizing: border-box;
-      border-bottom: 1px solid #78B9E9;
-      display: grid;
-      justify-content: center;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .header_logo {
-      display: flex;
-      justify-content: left;
-      align-items: start;
-      font: bold 40px 'arial';
-      text-align: left;
-      padding-top: 14px;
-      color: cornflowerblue;
-      letter-spacing: 2px;
-      flex-direction: column;
-      position: relative;
-      height: 100px;
-    }
-
-    .header_menu a:hover {
-      background-color: cornflowerblue;
-    }
-
-    .header_menu a.active {
-      background-color: azure;
-    }
-
-
-    .header_menu div {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      ;
-    }
-
-    .header_menu ul {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .header_menu ul li {
-      display: inline-block;
-    }
-
-    .header_menu ul li a {
-      display: block;
-      font: bold 30px 'arial';
-      margin: 0px 16px;
-      letter-spacing: 1px;
-    }
-
-    .logo {
-      width: 100px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .mypage {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      place-items: center;
-    }
-
-    .mypage:last-child {
-      padding-right: 50px;
-    }
-
-    .text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #logo {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-    }
-
-    body {
-      padding-left: 120px;
-      padding-right: 120px;
-      height: 100%;
-    }
-
-    #mainimg {
-      max-width: 40%;
-      max-height: 40%;
-      border-radius: 10%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: #444444;
-    }
-    footer {
-            clear: both;
-            background-color: #104E86;
-            margin-top: 30px;
-            padding: 10px;
-            text-align: left;
-            font-size: 20px;
-            color: white;
-        }
-  </style>
+  <link rel="stylesheet" href="../css_sy/detailpage.css">
+  <script src="../syjs/detailpage.js"></script>
 </head>
 
 <body>
@@ -188,9 +72,9 @@
         <h2 class="text-2xl mb-3">스틸컷</h2>
         <div class="px-4">
           <div class="single-item w-full">
-            <img src="스즈메1.jpg" alt="예고편" />
-            <img src="스즈메2.png" alt="예고편" />
-            <img src="스즈메3.png" alt="예고편" />
+            <img src="../imgs/스즈메1.jpg" alt="예고편" />
+            <img src="../imgs/스즈메2.png" alt="예고편" />
+            <img src="../imgs/스즈메3.png" alt="예고편" />
           </div>
         </div>
       </div>
@@ -200,7 +84,7 @@
     <!-- 상단 소개 -->
     <div class="flex mb-5">
       <div class="flex max-h-80">
-        <img class="object-contain" src="스즈메의 문단속.jpeg" alt="스즈메">
+        <img class="object-contain" src="../imgs/스즈메의 문단속.jpeg" alt="스즈메">
       </div>
       <div class="flex flex-column justify-between pl-3 py-3">
         <div>
@@ -256,7 +140,7 @@
         <h2 class="text-2xl mb-3">예고편</h2>
         <div>
           <a href="http://h.vod.cgv.co.kr/vodCGVa/86815/86815_212072_1200_128_960_540.mp4">
-            <img src="스즈메 예고편.png" alt="예고편" />
+            <img src="../imgs/스즈메 예고편.png" alt="예고편" />
           </a>
         </div>
       </div>
@@ -265,40 +149,39 @@
           <h2 class="text-2xl mb-3">스틸컷</h2>
           <div>
             <a id="open-overlay">
-              <img src="스즈메 스틸컷.png" alt="예고편" />
+              <img src="../imgs/스즈메 스틸컷.png" alt="예고편" />
             </a>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <img style="margin: auto;" src="스즈메 평점.png" alt="평점">
+      <img style="margin: auto;" src="../imgs/스즈메 평점1.png" alt="평점">
     </div>
-    <div class="foo">
-      <footer>
-        <input class="topBtn" type="button" value="TOP" style="cursor:pointer;" onclick="window.scrollTo(0,0);">
-        <p>&copy; 2023 NewbMovie. All rights reserved.</p>
-        <p>주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 2F, 3F, 4F, 5F, 6F</p>
-        <p>Tel : 1544-9970 / Fax : 02-562-2378</p>
+  <div class="container">
+      <div class="row">
+         <form method="post" action="writeAction.jsp">
+            <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+               <thead>
+                  <tr>
+                     <th colspan="2" style="background-color: #eeeeee; text-align: center;">리뷰</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
+                  </tr>
+                  <tr>
+                     <td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea></td>
+                  </tr>
+               </tbody>
+            </table>
 
-      </footer>
-    </div>
+            <input type="submit" class="btn btn-primary pull-right" value="글쓰기">
+         </form>
+      </div>
+   </div>
   </div>
-  <script>
-    $(document).ready(function () {
-      // 팝업 띄우기
-      $('#open-overlay').click(function (e) {
-        $('#overlay').removeClass('visually-hidden');
-      });
-      // 팝업 삭제
-      $('#overlay').click(function (e) {
-        if (e.target === e.currentTarget) {
-          $(this).addClass('visually-hidden');
-        }
-      });
-      $('.single-item').slick();
-    });
-  </script>
 </body>
 
 </html>
