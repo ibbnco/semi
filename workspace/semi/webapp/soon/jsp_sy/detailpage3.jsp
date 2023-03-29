@@ -189,7 +189,7 @@
                 <h2 class="text-2xl mb-3">스틸컷</h2>
                 <div class="px-4">
                     <div class="single-item w-full">
-                        <img src="소울메이트1.jpg" alt="예고편" />
+                        <img src="../imgs/소울메이트1.jpg" alt="예고편" />
                         <img src="소울메이트2.jpg" alt="예고편" />
                         <img src="소울메이트3.jpg" alt="예고편" />
                     </div>

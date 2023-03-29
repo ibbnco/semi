@@ -29,7 +29,7 @@
 </style>
 <header class="header">
     <div class="header_logo">
-        <a href="momain.html">
+        <a href="momain.jsp">
             <h1>뉴비무비</h1>
         </a>
         <p>NEWBMOVIE</p>
@@ -38,9 +38,9 @@
     <img class="logo" src="movielogo.png" alt="logo">
 </div>
 <div class="mypage">
-    <a href="#" target='blank'><img src="회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
-    <a href="#" target='blank'><img src="로그인.png" alt="login"> <p class="text">로그인</p></a>
-    <a href="#" target='blank'><img src="마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+    <a href="#" target='blank'><img src="../imgs/회원가입.png"  alt="join"> <p class="text">회원가입</p></a>
+    <a href="#" target='blank'><img src="../imgs/로그인.png" alt="login"> <p class="text">로그인</p></a>
+    <a href="#" target='blank'><img src="/imgs/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
     <a href="#" target='blank'><img src="고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
 </div>
 </header>
