@@ -28,9 +28,8 @@
 	<%@ include file="mainHead.jsp" %>
 	
 	<div id="menuname">
-        <ul>
-            <li><a href="03_store_orderlist.html">구매내역&nbsp;&nbsp;</a></li>           
-            <li><a href="03_store_cart.html">장바구니</a></li>
+        <ul>     
+            <li><a href="/store/care">장바구니</a></li>
         </ul>
     </div> 
 	
@@ -53,9 +52,9 @@
             <td><a href="/store/list3"><img src="/images/nachonew2.jpg" alt="" width="200px" height="150px"></a></td>
             <td></td>
         </tr>
-        <tr><td class="name2">오리지널 팝콘</td><td>￦4,500</td>
-        <td class="name2">콜라</td><td>￦2,500</td>
-        <td class="name2">나쵸</td><td>￦4,000</td></tr>
+        <tr><td class="name2"></td><td></td>
+        <td class="name2"></td><td></td>
+        <td class="name2"></td><td></td></tr>
         <tr class="name">
             <td>콤보</td>
             <td></td>
@@ -68,8 +67,8 @@
             <td><a href="/store/list5"><img src="/images/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>
             <td></td>
         </tr>
-        <tr><td class="name2">솔로콤보</td><td>￦4,500</td>
-            <td class="name2">마블 텀블러</td><td>￦10,500</td>        
+        <tr><td class="name2"></td><td></td>
+            <td class="name2"></td><td></td>        
        </table>
     </div>
     

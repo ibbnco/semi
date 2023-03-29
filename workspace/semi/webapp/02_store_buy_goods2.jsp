@@ -69,9 +69,9 @@
         <table id="store"> 
             <tr><td colspan="3"><a href="/store/goods1">
                     <img src="/images/marveltumbler.jpg" alt="" width="150px" height="130px"></a></td>
-                <td colspan="3"><a href="04_goods_2.jsp">
+                <td colspan="3"><a href="/store/goods2">
                     <img src="/images/slamduck.jpg" alt="" width="200px" height="150px"></a></td>
-                <td colspan="3"><a href="04_goods_3.jsp">
+                <td colspan="3"><a href="/store/goods3">
                     <img src="/images/marvelsignature.jpg" alt="" width="300px" height="190px"></a></td>
             </tr>
             <tr>

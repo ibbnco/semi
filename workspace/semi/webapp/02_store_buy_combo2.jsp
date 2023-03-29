@@ -58,11 +58,11 @@
     <div id="main">
         <table id="store">
 			<thead>
-	            <tr><td colspan="3"><a href="04_combo_1.jsp">
+	            <tr><td colspan="3"><a href="/store/combo1">
                     <img src="/images/combo1.jpg" alt="" width="200px" height="200px"></a></td>
-                <td colspan="3"><a href="04_combo_2.jsp">
+                <td colspan="3"><a href="/store/combo2">
                     <img src="/images/combo2.jpg" alt="" width="200px" height="200px"></a></td>
-                <td colspan="3"><a href="04_combo_3.jsp">
+                <td colspan="3"><a href="/store/combo3">
                     <img src="/images/combo3.jpg" alt="" width="200px" height="200px"></a></td>
 	            </tr>
 			</thead>

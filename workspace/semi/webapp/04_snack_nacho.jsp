@@ -79,7 +79,7 @@
     </div> 
 	
     <div id="main">
-        <table border="0"  id="store">
+        <table id="store">
             <tr><td id="detail" class="line">나쵸</td><td colspan="3"></td></tr>
             <tr><td><span class="des">짭짤해서 계속 먹게 되는 나쵸</span></td></tr>
             <tr><td rowspan="3"><img src="/images/nachonew2.jpg" alt="" width="400px" height="400px"></td>
@@ -89,6 +89,6 @@
 
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

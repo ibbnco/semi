@@ -3,7 +3,7 @@ package com.kh.app.store;
 import java.sql.Connection;
 import java.util.List;
 
-import com.kh.app.util.JDBCTemplate;
+import com.kh.app.store.JDBCTemplate;
 
 public class BoardService2 {
 	

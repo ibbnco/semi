@@ -79,7 +79,7 @@
     </div> 
 	
      <div id="main">
-        <table border="0"  id="store">
+        <table id="store">
             <tr><td id="detail" class="line">오징어</td><td colspan="3"></td></tr>
             <tr><td><span class="des">자꾸 손이 가는 오징어 구이</span></td></tr>
             <tr><td rowspan="3"><img src="/images/squid.jpg" alt="" width="400px" height="400px"></td>
@@ -88,6 +88,6 @@
             <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

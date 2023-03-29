@@ -91,6 +91,6 @@
             <tr><td colspan="3"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

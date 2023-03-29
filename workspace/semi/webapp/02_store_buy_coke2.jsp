@@ -62,11 +62,11 @@
     <div id="main">
         <table id="store">
 			<thead>
-	            <tr><td colspan="3"><a href="04_bever_coke.jsp">
+	            <tr><td colspan="3"><a href="/store/coke1">
 	                <img src="/images/coke.png" alt="" width="150px" height="130px"></a></td>
-	            <td colspan="3"><a href="04_bever_cider.jsp">
+	            <td colspan="3"><a href="/store/coke2">
 	                <img src="/images/cider.jpg" alt="" width="300px" height="150px"></a></td>
-	            <td colspan="3"><a href="04_bever_ade.jsp">
+	            <td colspan="3"><a href="/store/coke3">
 	                <img src="/images/pinkade.jpg" alt="" width="200px" height="200px"></a></td>
 	           </tr>
 			</thead>
@@ -80,9 +80,9 @@
 						</c:if>
 					</c:forEach>
 				</tr>
-				<tr><td colspan="3"><a href="04_bever_ame.jsp">
+				<tr><td colspan="3"><a href="/store/coke4">
 	                <img src="/images/ame.jpg" alt="" width="180px" height="200px"></a></td> 
-	            <td colspan="3"><a href="04_bever_iceame.jsp">
+	            <td colspan="3"><a href="/store/coke5">
 	                <img src="/images/iceame.jpg" alt="" width="300px" height="200px"></a></td>
 	            </tr>
 			</tbody>	
