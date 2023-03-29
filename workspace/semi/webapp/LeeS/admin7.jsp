@@ -10,25 +10,40 @@
 <body>
 <section>
     <div>
-        <form action="" method="post">
-            <table border="1"  id="lee1" style="width: 10%;">
+            <table border="1"  id="lee1" style="width: 15%;">
                 <tr>
                     <td colspan="2">회원정보 통계</td>
                 </tr>
                 <tr>
-                    <td>총회원수 : </td>
-                    <td>10명</td>
+                    <td>총회원계정 : </td>
+                    <td>${gradeVo.total}개</td>
+                 </tr>
+                 <tr>
+                    <td>정상계정 : </td>
+                    <td>${gradeVo.live}개</td>
                  </tr>
                  <tr>
                     <td>휴면계정 : </td>
-                    <td>1개</td>
+                    <td>${gradeVo.sleep}개</td>
                  </tr>
                  <tr>
-                    <td>VIP 회원 :  </td>
-                    <td>1명</td>
+                    <td>탈퇴계정 : </td>
+                    <td>${gradeVo.death}개</td>
                  </tr>
+                 <tr>
+                    <td>White등급 계정 : </td>
+                    <td>${gradeVo.white}개</td>
+                 </tr>
+                 <tr>
+                    <td>Silver등급 계정 : </td>
+                    <td>${gradeVo.gold}개</td>
+                 </tr>
+                 <tr>
+                    <td>Gold등급 계정 : </td>
+                    <td>${gradeVo.gold}개</td>
+                 </tr>                 
             </table>
-            <table class="table table-striped" id="tab2" style="float: right; width: 60%;">
+            <table class="table table-striped" id="tab2" style="width: 62%;">
                 <thead>
                   <tr>
                     <th scope="col">번호</th>
@@ -39,80 +54,52 @@
                   </tr>
                 </thead>
                 <tbody class="table table-striped">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>ID1</td>
-                    <td>정상</td>
-                    <td>VIP</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>ID2</td>
-                    <td>휴면</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>ID3</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>ID4</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>ID5</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>ID6</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>ID7</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>ID8</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>ID9</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>ID10</td>
-                    <td>정상</td>
-                    <td>일반</td>
-                    <td>2023-01-01</td>
-                  </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>
-</section>
-</body>
+                  <c:forEach items="${boardList}" var="bl">
+                <tr>
+                  <th scope="row">${bl.no}</th>
+                  <td>${bl.id}</td>
+                  <td>${bl.status}</td>
+                  <td>${bl.grade}</td>
+                  <td>${bl.date}</td>
+                </tr>
+              </c:forEach> 
+            </tbody>
+          </table>
+          <hr>
+          <nav id="navArea" aria-label="Page navigation example"  style="margin-right: 220px">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <c:if test="${ pageVo.currentPage > 1 }">
+					<a style="margin-right: 20px" class="page-link" href="/LeeS/admin7?page=${pageVo.currentPage-1}">이전</a>
+				</c:if>
+              </li>
+                <c:forEach var="i" begin="${pageVo.startPage}" end="${pageVo.endPage}">					
+					<c:if test="${pageVo.currentPage == i}">
+						<div><span style="font-size: 30px; padding-right: 20px;"  >${i}</span></div>
+					</c:if>
+					<c:if test="${pageVo.currentPage != i}">
+						<a style="font-size: 30px; padding-right: 20px;" href="/LeeS/admin7?page=${i}">${i}</a>
+					</c:if>
+				</c:forEach>
+              <li class="page-item">
+                <c:if test="${ pageVo.currentPage < pageVo.maxPage }">
+					<a class="page-link" href="/LeeS/admin7?page=${pageVo.currentPage+1}">다음</a>
+				</c:if>
+              </li>
+            </ul>
+          </nav>
+        </article>  
+     </div>  
+   </main> 
+  </section>
+ </body>
 </html>
+<script>
+
+	const tbody = document.querySelector("main tbody");
+	tbody.addEventListener("click" , function(event){
+		const no = event.target.parentNode.children[0].innerText;
+		location.href = "/LeeS/detail7?no=" + no;
+	});
+
+</script>

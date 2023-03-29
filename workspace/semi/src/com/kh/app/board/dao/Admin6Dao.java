@@ -12,14 +12,14 @@ import com.kh.app.board.vo.AttachmentVo;
 import com.kh.app.util.JDBCTemplate;
 import com.kh.app.util.page.PageVo;
 
-public class Admin5Dao {
+public class Admin6Dao {
 
 	//게시글 조회
 	public List<AdminVo> selectList(Connection conn , PageVo pageVo) throws Exception {
 
 		//SQL (close)
 		//String sql = "SELECT * FROM ( SELECT ROWNUM AS RNUM , TEMP.* FROM ( SELECT N.EVENT_NO , N.EVENT_TITLE , N.EVENT_CONTENT , N.EVENT_DATE FROM EVENT N JOIN ADMIN A ON N.WRITER = A.ADMIN_NO WHERE N.IS_DELETED = 'N' ORDER BY EVENT_NO DESC ) TEMP ) WHERE RNUM BETWEEN ? AND ?";
-		String sql ="SELECT * FROM ( SELECT ROWNUM AS RNUM , TEMP.* FROM ( SELECT MOVIE_NO , MOVIE_TITLE , OPENNING_DATE , MOVIE_ACTOR , SUMMARY , MOVIE_GENRE , MOVIE_PR , MOVIE_RUNNING , RATE_FIFTEEN FROM SCREEN_MOVIE WHERE IS_DELETED = 'N' ORDER BY MOVIE_NO DESC ) TEMP ) WHERE RNUM BETWEEN ? AND ?";
+		String sql ="SELECT * FROM ( SELECT ROWNUM AS RNUM , TEMP.* FROM ( SELECT PRODUCT_NO , PRODUCT_NAME , PRODUCT_DATE , PRODUCT_REVISE , PRODUCT_DETAIL , COUNT FROM PRODUCT WHERE DELETE_YN = 'N' ORDER BY PRODUCT_NO DESC ) TEMP ) WHERE RNUM BETWEEN ? AND ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		int startRow = (pageVo.getCurrentPage()-1) * pageVo.getBoardLimit() + 1;
 		int endRow = startRow + pageVo.getBoardLimit() - 1;
@@ -32,15 +32,12 @@ public class Admin5Dao {
 		
 		while(rs.next()) { 			
 			AdminVo vo = new AdminVo();
-			vo.setNo(rs.getString("MOVIE_NO"));
-			vo.setTitle(rs.getString("MOVIE_TITLE"));
-			vo.setOpen(rs.getString("OPENNING_DATE"));
-			vo.setActor(rs.getString("MOVIE_ACTOR"));
-			vo.setSummary(rs.getString("SUMMARY"));
-			vo.setGenre(rs.getString("MOVIE_GENRE"));
-			vo.setPr(rs.getString("MOVIE_PR"));
-			vo.setRun(rs.getString("MOVIE_RUNNING"));
-			vo.setRate(rs.getString("RATE_FIFTEEN"));
+			vo.setNo(rs.getString("PRODUCT_NO"));
+			vo.setTitle(rs.getString("PRODUCT_NAME"));
+			vo.setDate(rs.getString("PRODUCT_DATE"));
+			vo.setUpdate(rs.getString("PRODUCT_REVISE"));
+			vo.setContent(rs.getString("PRODUCT_DETAIL"));
+			vo.setCount(rs.getString("COUNT"));
 			boardList.add(vo);
 		}
 		return boardList;
@@ -50,16 +47,13 @@ public class Admin5Dao {
 	public int write(Connection conn, AdminVo vo) throws Exception {
 		
 		//SQL (close)
-		String sql = "INSERT INTO SCREEN_MOVIE(MOVIE_NO , MOVIE_TITLE , OPENNING_DATE , MOVIE_ACTOR , SUMMARY , MOVIE_GENRE , MOVIE_PR , MOVIE_RUNNING , RATE_FIFTEEN) VALUES (SCM_SEQ.NEXTVAL , ? , ? , ? , ? , ? , ? , ? , ?)";
+		String sql = "INSERT INTO PRODUCT(PRODUCT_NO , PRODUCT_NAME , PRODUCT_DATE , PRODUCT_REVISE , PRODUCT_DETAIL , COUNT) VALUES (PRD_SEQ.NEXTVAL , ? , ? , ? , ? , ?)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, vo.getTitle());
-		pstmt.setString(2, vo.getOpen());
-		pstmt.setString(3, vo.getActor());
-		pstmt.setString(4, vo.getSummary());
-		pstmt.setString(5, vo.getGenre());
-		pstmt.setString(6, vo.getPr());
-		pstmt.setString(7, vo.getRun());
-		pstmt.setString(8, vo.getRate());
+		pstmt.setString(2, vo.getDate());
+		pstmt.setString(3, vo.getUpdate());
+		pstmt.setString(4, vo.getContent());
+		pstmt.setString(5, vo.getCount());
 		int result = pstmt.executeUpdate();
 		
 		JDBCTemplate.close(pstmt);
@@ -71,17 +65,14 @@ public class Admin5Dao {
     public int update(Connection conn, AdminVo vo, String no) throws Exception {
 		
 		//SQL (close)
-		String sql = "UPDATE SCREEN_MOVIE SET MOVIE_TITLE = ? , OPENNING_DATE = ? , MOVIE_ACTOR = ? , SUMMARY = ? , MOVIE_GENRE = ? , MOVIE_PR = ? , MOVIE_RUNNING = ? , RATE_FIFTEEN = ? WHERE MOVIE_NO = ?";
+		String sql = "UPDATE PRODUCT SET PRODUCT_NAME = ? , PRODUCT_DATE = ? , PRODUCT_REVISE = ? , PRODUCT_DETAIL = ? , COUNT = ? WHERE PRODUCT_NO = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, vo.getTitle());
-		pstmt.setString(2, vo.getOpen());
-		pstmt.setString(3, vo.getActor());
-		pstmt.setString(4, vo.getSummary());
-		pstmt.setString(5, vo.getGenre());
-		pstmt.setString(6, vo.getPr());
-		pstmt.setString(7, vo.getRun());
-		pstmt.setString(8, vo.getRate());
-		pstmt.setString(9, no);
+		pstmt.setString(2, vo.getDate());
+		pstmt.setString(3, vo.getUpdate());
+		pstmt.setString(4, vo.getContent());
+		pstmt.setString(5, vo.getCount());
+		pstmt.setString(6, no);
         int result = pstmt.executeUpdate();
 		
 		JDBCTemplate.close(pstmt);
@@ -93,7 +84,7 @@ public class Admin5Dao {
     public int delete(Connection conn, String no) throws Exception {
 		
 		//SQL (close)
-    	String sql = "UPDATE SCREEN_MOVIE SET IS_DELETED = 'Y' WHERE MOVIE_NO = ?";
+    	String sql = "UPDATE PRODUCT SET DELETE_YN = 'Y' WHERE PRODUCT_NO = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		pstmt.setString(1, no);
@@ -107,7 +98,7 @@ public class Admin5Dao {
 		public int selectCount(Connection conn) throws Exception {
 			
 			//SQL (close)
-			String sql = "SELECT COUNT(*) AS CNT FROM SCREEN_MOVIE WHERE IS_DELETED = 'N'";
+			String sql = "SELECT COUNT(*) AS CNT FROM PRODUCT WHERE DELETE_YN = 'N'";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
 			
@@ -127,7 +118,7 @@ public class Admin5Dao {
 		public AdminVo selectOne(Connection conn, String no) throws Exception {
 			
 			//SQL
-			String sql = "SELECT * FROM SCREEN_MOVIE WHERE MOVIE_NO = ? AND IS_DELETED = 'N'";
+			String sql = "SELECT * FROM PRODUCT WHERE PRODUCT_NO = ? AND DELETE_YN = 'N'";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, no);
 			ResultSet rs = pstmt.executeQuery();
@@ -136,15 +127,12 @@ public class Admin5Dao {
 			AdminVo vo = null;
 			if( rs.next() ) {			
 				vo = new AdminVo();
-				vo.setNo(rs.getString("MOVIE_NO"));
-				vo.setTitle(rs.getString("MOVIE_TITLE"));
-				vo.setOpen(rs.getString("OPENNING_DATE"));
-				vo.setActor(rs.getString("MOVIE_ACTOR"));
-				vo.setSummary(rs.getString("SUMMARY"));
-				vo.setGenre(rs.getString("MOVIE_GENRE"));
-				vo.setPr(rs.getString("MOVIE_PR"));
-				vo.setRun(rs.getString("MOVIE_RUNNING"));
-				vo.setRate(rs.getString("RATE_FIFTEEN"));
+				vo.setNo(rs.getString("PRODUCT_NO"));
+				vo.setTitle(rs.getString("PRODUCT_NAME"));
+				vo.setDate(rs.getString("PRODUCT_DATE"));
+				vo.setUpdate(rs.getString("PRODUCT_REVISE"));
+				vo.setContent(rs.getString("PRODUCT_DETAIL"));
+				vo.setCount(rs.getString("COUNT"));
 			}
 			
 			//close 

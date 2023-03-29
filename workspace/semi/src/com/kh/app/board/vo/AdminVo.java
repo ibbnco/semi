@@ -17,6 +17,17 @@ public class AdminVo {
 	private String rate;
 	private String pr;
 	private String run;
+	private String price;
+	private String update;
+	private String count;
+	private String id;
+	private String status;
+	private String grade;
+	private String name;
+	private String nick;
+	private String tel;
+	private String email;
+	private String point;
 	public String getNo() {
 		return no;
 	}
@@ -65,8 +76,7 @@ public class AdminVo {
 	}
 	public void setChangeName(String changeName) {
 		this.changeName = changeName;
-	}
-	
+	}	
 	public String getOpen() {
 		return open;
 	}
@@ -108,6 +118,72 @@ public class AdminVo {
 	}
 	public void setRun(String run) {
 		this.run = run;
+	}	
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getUpdate() {
+		return update;
+	}
+	public void setUpdate(String update) {
+		this.update = update;
+	}
+	public String getCount() {
+		return count;
+	}
+	public void setCount(String count) {
+		this.count = count;
+	}	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getNick() {
+		return nick;
+	}
+	public void setNick(String nick) {
+		this.nick = nick;
+	}
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPoint() {
+		return point;
+	}
+	public void setPoint(String point) {
+		this.point = point;
 	}
 	public AdminVo() {
 		super();
@@ -118,11 +194,14 @@ public class AdminVo {
 		return "AdminVo [no=" + no + ", title=" + title + ", content=" + content + ", writer=" + writer + ", date="
 				+ date + ", isDeleted=" + isDeleted + ", hit=" + hit + ", changeName=" + changeName + ", open=" + open
 				+ ", actor=" + actor + ", summary=" + summary + ", genre=" + genre + ", rate=" + rate + ", pr=" + pr
-				+ ", run=" + run + "]";
+				+ ", run=" + run + ", price=" + price + ", update=" + update + ", count=" + count + ", id=" + id
+				+ ", status=" + status + ", grade=" + grade + ", name=" + name + ", nick=" + nick + ", tel=" + tel
+				+ ", email=" + email + ", point=" + point + "]";
 	}
 	public AdminVo(String no, String title, String content, String writer, String date, String isDeleted, String hit,
 			String changeName, String open, String actor, String summary, String genre, String rate, String pr,
-			String run) {
+			String run, String price, String update, String count, String id, String status, String grade, String name,
+			String nick, String tel, String email, String point) {
 		super();
 		this.no = no;
 		this.title = title;
@@ -139,6 +218,17 @@ public class AdminVo {
 		this.rate = rate;
 		this.pr = pr;
 		this.run = run;
-	}	
+		this.price = price;
+		this.update = update;
+		this.count = count;
+		this.id = id;
+		this.status = status;
+		this.grade = grade;
+		this.name = name;
+		this.nick = nick;
+		this.tel = tel;
+		this.email = email;
+		this.point = point;
+	}
 	
 }

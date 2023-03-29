@@ -11,7 +11,7 @@
 <section>
     <div>
         <form action="/LeeS/write5" method="post" enctype="multipart/form-data">
-            <table border="1"  id="lee1" style="width: 22%;">
+            <table border="1"  id="lee1" style="width: 21%;">
                 <tr>
                     <td colspan="2">영화등록(DB로 저장되게)</td>
                 </tr>
@@ -48,11 +48,11 @@
                     <td><input type="text" name="run" size="10"></td>
                  </tr>
                  <tr>
-                    <td colspan="2" align=right"><input type="submit" value="등록하기"></td>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="등록하기"></td>
                  </tr>
             </table>
             </form>
-            <table class="table table-striped" id="tab2" style="float: right; width: 50%;">
+            <table class="table table-striped" id="tab2" style="width: 56%;">
                 <thead>
                   <tr>
                     <th scope="col">번호</th>
@@ -73,11 +73,11 @@
             </tbody>
           </table>
           <hr>
-          <nav id="navArea" aria-label="Page navigation example">
+          <nav id="navArea" aria-label="Page navigation example" style="margin-right: 220px">
             <ul class="pagination justify-content-center">
               <li class="page-item disabled">
                 <c:if test="${ pageVo.currentPage > 1 }">
-					<a style="margin-right: 20px" class="page-link" href="/LeeS/admin4?page=${pageVo.currentPage-1}">이전</a>
+					<a style="margin-right: 20px" class="page-link" href="/LeeS/admin5?page=${pageVo.currentPage-1}">이전</a>
 				</c:if>
               </li>
                 <c:forEach var="i" begin="${pageVo.startPage}" end="${pageVo.endPage}">					
@@ -85,12 +85,12 @@
 						<div><span style="font-size: 30px; padding-right: 20px;"  >${i}</span></div>
 					</c:if>
 					<c:if test="${pageVo.currentPage != i}">
-						<a style="font-size: 30px; padding-right: 20px;" href="/LeeS/admin4?page=${i}">${i}</a>
+						<a style="font-size: 30px; padding-right: 20px;" href="/LeeS/admin5?page=${i}">${i}</a>
 					</c:if>
 				</c:forEach>
               <li class="page-item">
                 <c:if test="${ pageVo.currentPage < pageVo.maxPage }">
-					<a class="page-link" href="/LeeS/admin4?page=${pageVo.currentPage+1}">다음</a>
+					<a class="page-link" href="/LeeS/admin5?page=${pageVo.currentPage+1}">다음</a>
 				</c:if>
               </li>
             </ul>
