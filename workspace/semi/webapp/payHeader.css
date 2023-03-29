@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
     a{ text-decoration-line: none; }
     a:link { color:cornflowerblue; text-decoration: none;}
@@ -51,6 +51,7 @@
         margin: 10px 16px 10px 16px;
         letter-spacing: 1px;
     }
+    
     .logo {
         width: 100px;
         display: block;
@@ -90,15 +91,17 @@
         color: #104E86;
     }
 
-    ul>li {
+    div>ul>li {
         display: inline;
     }
 
-    ul{
+    div>ul{
+    	display: inline;
         float: right;
     }
 
-    li{
+    div>li{
+   	 	display: inline;
         float: left;
     }
 
@@ -147,11 +150,6 @@
         padding: 20px;
     }
 
-/*     .cartlist_detail :nth-child(4),
-    .cartlist_detail :nth-child(5),
-    .cartlist_detail :nth-child(6) {
-        border-left: 1px solid whitesmoke;
-    } */
     .cartlist_detail :nth-child(1),
     .cartlist_detail :nth-child(2),
     .cartlist_detail :nth-child(4),
@@ -201,24 +199,24 @@
     }
 
     table {
-        border-top: solid 1.5px lightgrey;
-        border-collapse: collapse;
+        /* border-top: solid 1.5px lightgrey; */
+        /* border-collapse: collapse; */
         width: 100%;
         font-size: 14px;
     }
 
-    thead {
+    thead, tbody, tfoot {
         text-align: center;
         font-weight: bold;
     }
     
-    tbody {
+	wrapper,tbody,tfoot {
         font-size: 12px;
     }
 
-    th, td {
+    th, tr, td {
         padding: 15px 0px;
-        border-bottom: 1px solid lightgrey;
+        /* border-bottom: 1px solid lightgrey; */
     }
 
     footer {

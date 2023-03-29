@@ -11,7 +11,7 @@ public class BoardDao {
 	//게시글 조회
 	public List<BoardVo> selectList(Connection conn) throws Exception {
 		//sql
-		String sql = "SELECT PRODUCT_NO, PRODUCT_NAME, PRODUCT_PRICE FROM PRODUCT WHERE DELETE_YN='N'";
+		String sql = "SELECT PRODUCT_NO, PRODUCT_NAME, PRODUCT_PRICE FROM POPCORN WHERE DELETE_YN='N'";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		ResultSet rs = pstmt.executeQuery();
 	
@@ -19,21 +19,19 @@ public class BoardDao {
 		
 		while (rs.next()) { 
 			
-			String no = rs.getString("product_no");
-			String name = rs.getString("product_name");
-			String price = rs.getString("product_price");
+			String no = rs.getString("PRODUCT_NO");
+			String name = rs.getString("PRODUCT_NAME");
+			String price = rs.getString("PRODUCT_PRICE");
 			
 			BoardVo vo = new BoardVo();
-			vo.setProduct_no(no);
-			vo.setProduct_name(name);
-			vo.setProduct_price(price);
+			vo.setProductNo(no);
+			vo.setProductName(name);
+			vo.setProductPrice(price);
 			
 			boardList.add(vo);
 			
 		}
 		return boardList;
 	}
-	
-	
 	
 }

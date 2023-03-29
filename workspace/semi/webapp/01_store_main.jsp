@@ -25,10 +25,6 @@
 </head>
 <body>
 
-<%-- <div id="wrapper">
-<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %>
-</div> --%>
-
 	<%@ include file="mainHead.jsp" %>
 	
 	<div id="menuname">

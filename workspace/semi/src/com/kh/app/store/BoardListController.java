@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/board/list")
+@WebServlet("/store/list")
 public class BoardListController extends HttpServlet{
 	
 	@Override
@@ -25,9 +25,8 @@ public class BoardListController extends HttpServlet{
 		}
 		System.out.println(boardList);
 		
-		//화면
 		req.setAttribute("boardList", boardList);
-		req.getRequestDispatcher("01_store_main2.jsp").forward(req, resp);
+		req.getRequestDispatcher("/01_store_main2.jsp").forward(req, resp);
 		
 	}
 	
