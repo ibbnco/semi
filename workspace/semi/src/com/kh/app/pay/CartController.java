@@ -21,7 +21,7 @@ public class CartController extends HttpServlet{
 		List<BoardVo> boardList = null;
 		try {
 			BoardService bs = new BoardService();
-			boardList = bs.selectList();			
+			boardList = bs.selectList();
 		}catch(Exception e) {
 			System.out.println("예외 발생");
 			e.printStackTrace();

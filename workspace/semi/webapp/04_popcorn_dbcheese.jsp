@@ -58,12 +58,6 @@
     #table3{
         text-align: center;
     }
-	
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}
 </style>
 </head>
 <body>
@@ -84,7 +78,7 @@
             <tr><td><span class="des">치즈를 두 배로 넣어 더 고소한 팝콘</span></td></tr>
             <tr><td rowspan="3"><img src="/images/더블치즈팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td><td>&nbsp;&nbsp;￦6,000<br><br>&nbsp;&nbsp;더블치즈 팝콘 1개<br><br>&nbsp;&nbsp;체다치즈:뉴질랜드산</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
         </table>
     </div>
     <footer><%@ include file="footer.jsp" %></footer>

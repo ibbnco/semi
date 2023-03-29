@@ -79,13 +79,13 @@
     </div> 
 	
     <div id="main">
-        <table border="0" id="store">
+        <table id="store">
             <tr><td id="detail" class="line">사인</td><td colspan="3"></td></tr>
             <tr><td><span class="des"></span></td></tr>
             <tr><td rowspan="3"><img src="/images/marvelsignature.jpg" alt="" width="300px" height="300px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>설명</td>
                 <td>&nbsp;&nbsp;￦20,000<br><br>&nbsp;&nbsp;사인 1개<br><br>&nbsp;&nbsp;어벤져스 사인</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
         </table>
     </div>
     <footer><%@ include file="footer.jsp" %></footer>

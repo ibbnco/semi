@@ -66,7 +66,7 @@
             <tr><td rowspan="3"><img src="/images/coke.png" alt="" width="280px" height="280px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>제품</td>
                 <td>&nbsp;&nbsp;￦2,500<br><br>&nbsp;&nbsp;콜라 1개<br><br>&nbsp;&nbsp;코카콜라</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+			<tr><td colspan="3"><button class="cart_orderbtn left" type="button" onclick="location.href='/store/cart'">장바구니</button></td></tr>
         </table>
     </div>
     <footer><%@ include file="footer.jsp" %></footer>
