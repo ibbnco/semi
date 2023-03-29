@@ -29,7 +29,7 @@
 	
 	<div id="menuname">
         <ul>     
-            <li><a href="/store/care">장바구니</a></li>
+            <li><a href="/store/cart">장바구니</a></li>
         </ul>
     </div> 
 	

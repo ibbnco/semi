@@ -4,50 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style>
-	#menuname{
-	    float: left;
-	    font-size: x-large;
-	    font-weight: bolder;
-	    color: #104E86;
-	}
-	#menubar{
-	    width: 100%;
-	    height: 100px;
-	    background-color: #CAD7E4;
-	}
-	#menubar ul li a {
-	    font-size: 15px;
-	    font-weight: bold;
-	    float:right;
-	}
-	ul>li {
-	    display: inline;   
-	}
-	ul{
-	    float: right;
-	}
-	li{
-	    float: left;
-	}
-	
-	body{
-	    padding-left: 220px;
-	    padding-right: 220px;
-	}
-	#store{
-	    width: 100%;
-	    height: 100%;
-	    padding: 5%;
-	    border-spacing: 20px;
-	    margin: auto;
-	    font-weight: 300;
-	}
-	#detail{
-	    color: #104E86;
-	}
-	
-</style>
 </head>
 <body>
 
@@ -58,7 +14,7 @@
         </ul>
     </div> 
     
-    <div id="main">
+    <div>
         <table id="store">
 			<thead>
 	            <tr><td colspan="3"><a href="/store/pop1">
