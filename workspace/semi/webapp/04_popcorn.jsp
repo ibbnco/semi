@@ -67,8 +67,7 @@
 </style>
 </head>
 <body>
-<%-- <div id="wrapper">
-<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %></div> --%>
+
 
 	<%@ include file="logoHeader.jsp" %>
 	
@@ -79,15 +78,15 @@
     </div> 
 	
     <div id="main">
-        <table border="0"  id="store">
+        <table id="store">
             <tr><td id="detail" class="line">팝콘</td><td colspan="3"></td></tr>
             <tr><td><span class="des">제일 기본적인 팝콘</span></td></tr>
             <tr><td rowspan="3"><img src="/images/팝콘.jpg" alt="" width="400px" height="400px"></td>
                 <td colspan="2" id="table3">가격<br><br>구성<br><br>원산지</td>
                 <td>&nbsp;&nbsp;￦4,500<br><br>&nbsp;&nbsp;오리지널 팝콘 1개<br><br>&nbsp;&nbsp;정제소금:국내산</td></tr>
-            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href='03_store_cart.jsp';">장바구니</button></td>
+            <tr><td colspan="2"><button class="cart_orderbtn left" onclick="location.href=/store/cart">장바구니</button></td>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

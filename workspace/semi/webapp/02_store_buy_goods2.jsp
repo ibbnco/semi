@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
 <style>
 	#menuname{
 	    float: left;
@@ -68,19 +67,24 @@
 
     <div id="main">
         <table id="store"> 
-            <tr><td colspan="3"><a href="04_goods_1.jsp">
+            <tr><td colspan="3"><a href="/store/goods1">
                     <img src="/images/marveltumbler.jpg" alt="" width="150px" height="130px"></a></td>
                 <td colspan="3"><a href="04_goods_2.jsp">
                     <img src="/images/slamduck.jpg" alt="" width="200px" height="150px"></a></td>
                 <td colspan="3"><a href="04_goods_3.jsp">
                     <img src="/images/marvelsignature.jpg" alt="" width="300px" height="190px"></a></td>
             </tr>
-            <tr><td id="detail" colspan="2"><b>마블 텀블러</b></td><td>￦10,500</td>
-            <td id="detail" colspan="2"><b>슬램덩크 포스터</b></td><td>￦9,000</td>
-            <td id="detail" colspan="2"><b>어벤져스 사인</b></td><td>￦20,000</td>
-            </tr>
+            <tr>
+				<c:forEach items="${boardList}" var="bvo" varStatus="s">
+					<c:if test="${s.index < 3}">
+					<td></td>
+					<td id="pdtname">${bvo.productName}</td>
+					<td>${bvo.productPrice}</td>
+					</c:if>
+				</c:forEach>
+			</tr>
         </table>
     </div>
-    <footer>footer</footer>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

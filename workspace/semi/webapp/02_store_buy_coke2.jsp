@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Insert title here</title>
 <style>
 	#menuname{
 	    float: left;
@@ -46,48 +47,58 @@
 	#detail{
 	    color: #104E86;
 	}
-	footer {
-	    background-color: #6188AF;
-	    width: 100%;
-	    height: 100px;
-	}
+	
 </style>
 </head>
 <body>
-<%-- <div id="wrapper">
-<%@ include file="/WEB-INF/views/common/logoHeader.jsp" %></div> --%>
 
 	<%@ include file="logoHeader.jsp" %>
-	
-	<div id="menuname">
+    <div id="menuname">
         <ul>
-            <li>음료 Drinks</li>
+            <li>팝콘 PopCorn</li><br>
         </ul>
-    </div>
+    </div> 
     
-	<div id="main">
-	    <table id="store">
-	        <tr><td colspan="3"><a href="04_bever_coke.jsp">
+    <div id="main">
+        <table id="store">
+			<thead>
+	            <tr><td colspan="3"><a href="04_bever_coke.jsp">
 	                <img src="/images/coke.png" alt="" width="150px" height="130px"></a></td>
 	            <td colspan="3"><a href="04_bever_cider.jsp">
 	                <img src="/images/cider.jpg" alt="" width="300px" height="150px"></a></td>
 	            <td colspan="3"><a href="04_bever_ade.jsp">
 	                <img src="/images/pinkade.jpg" alt="" width="200px" height="200px"></a></td>
-	        </tr>
-	        <tr><td id="detail" colspan="2"><b>콜라</b></td><td>￦2,500</td>
-	        <td id="detail" colspan="2"><b>사이다</b></td><td>￦2,500</td>
-	        <td id="detail" colspan="2"><b>에이드</b></td><td>￦3,500</td>
-	        </tr>
-	        <tr><td colspan="3"><a href="04_bever_ame.jsp">
+	           </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<c:forEach items="${boardList}" var="bvo" varStatus="s">
+						<c:if test="${s.index < 3}">
+						<td></td>
+						<td id="pdtname">${bvo.productName}</td>
+						<td>${bvo.productPrice}</td>
+						</c:if>
+					</c:forEach>
+				</tr>
+				<tr><td colspan="3"><a href="04_bever_ame.jsp">
 	                <img src="/images/ame.jpg" alt="" width="180px" height="200px"></a></td> 
 	            <td colspan="3"><a href="04_bever_iceame.jsp">
-	                <img src="/images/iceame.jpg" alt="" width="300px" height="200px"></a></td>        
-	        </tr>
-	        <tr><td id="detail"><b>아메리카노</b></td><td colspan="2">￦2,500</td>
-	            <td id="detail"><b>아이스 아메리카노</b></td><td colspan="2">￦3,000</td>
-	        </tr>
-	    </table>
-	</div>
-	<footer>footer</footer>
+	                <img src="/images/iceame.jpg" alt="" width="300px" height="200px"></a></td>
+	            </tr>
+			</tbody>	
+			<tfoot>		
+            	<tr>
+		            <c:forEach items="${boardList}" var="bvo" varStatus="s">
+			            <c:if test="${s.index >= 3}">
+			            <td></td>
+						<td id="pdtname">${bvo.productName}</td>
+						<td>${bvo.productPrice}</td>
+						</c:if>
+					</c:forEach>
+				</tr>
+			</tfoot>	
+		</table>
+    </div>
+    <footer><%@ include file="footer.jsp" %></footer>
 </body>
 </html>

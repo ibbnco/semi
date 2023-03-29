@@ -200,7 +200,7 @@
 
     table {
         /* border-top: solid 1.5px lightgrey; */
-        /* border-collapse: collapse; */
+        border-collapse: collapse;
         width: 100%;
         font-size: 14px;
     }
@@ -210,7 +210,12 @@
         font-weight: bold;
     }
     
-	wrapper,tbody,tfoot {
+	#wrapper {
+    	display: block;
+    	clear: both;
+    }
+    
+	#wrapper,tbody,tfoot {
         font-size: 12px;
     }
 

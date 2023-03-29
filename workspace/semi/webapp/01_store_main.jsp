@@ -39,18 +39,18 @@
 		<table id="store">
         <tr>
             <td class="name">팝콘</td>
-            <td><button type="button" onclick="location.href='02_store_buy_pop.jsp';">+</button></td>
+            <td></td>
             <td class="name">음료</td>
-            <td><button type="button" onclick="location.href='02_store_buy_coke.jsp';">+</button></td>
+            <td></td>
             <td class="name">스낵</td>
-            <td><button type="button" onclick="location.href='02_store_buy_snack.jsp';">+</button></td>
+            <td></td>
         </tr>
         <tr>
-            <td><a href="02_store_buy_pop.jsp"><img src="/images/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
+            <td><a href="/store/list"><img src="/images/팝콘.jpg" alt="" width="200px" height="200px"></a></td>
             <td></td>
-            <td><a href="02_store_buy_coke.jsp"><img src="/images/coke.png" alt="" width="180px" height="160px"></a></td>
+            <td><a href="/store/list2"><img src="/images/coke.png" alt="" width="180px" height="160px"></a></td>
             <td></td>
-            <td><a href="02_store_buy_snack.jsp"><img src="/images/nachonew2.jpg" alt="" width="200px" height="150px"></a></td>
+            <td><a href="/store/list3"><img src="/images/nachonew2.jpg" alt="" width="200px" height="150px"></a></td>
             <td></td>
         </tr>
         <tr><td class="name2">오리지널 팝콘</td><td>￦4,500</td>
@@ -58,14 +58,14 @@
         <td class="name2">나쵸</td><td>￦4,000</td></tr>
         <tr class="name">
             <td>콤보</td>
-            <td><button type="button" onclick="location.href='02_store_buy_combo.jsp';">+</button></td>
+            <td></td>
             <td>굿즈</td>
-            <td><button type="button" onclick="location.href='02_store_buy_goods.jsp';">+</button></td>
+            <td></td>
         </tr>
         <tr class="name">
-            <td><a href="02_store_buy_combo.jsp"><img src="/images/combo1.jpg" alt="" width="230px" height="230px"></a></td>
+            <td><a href="/store/list4"><img src="/images/combo1.jpg" alt="" width="230px" height="230px"></a></td>
             <td></td>
-            <td><a href="02_store_buy_goods.jsp"><img src="/images/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>
+            <td><a href="/store/list5"><img src="/images/marveltumbler.jpg" alt="" width="150px" height="150px"></a></td>
             <td></td>
         </tr>
         <tr><td class="name2">솔로콤보</td><td>￦4,500</td>

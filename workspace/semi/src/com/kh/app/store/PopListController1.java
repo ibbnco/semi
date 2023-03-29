@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/store/list")
-public class BoardListController extends HttpServlet{
+@WebServlet("/store/pop1")
+public class PopListController1 extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class BoardListController extends HttpServlet{
 		System.out.println(boardList);
 		
 		req.setAttribute("boardList", boardList);
-		req.getRequestDispatcher("/02_store_buy_pop.jsp").forward(req, resp);
+		req.getRequestDispatcher("/04_popcorn.jsp").forward(req, resp);
 		
 	}
 	
