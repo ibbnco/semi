@@ -17,13 +17,13 @@ public class JDBCTemplate {
 			Class.forName("oracle.jdbc.OracleDriver");
 			
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String id = "TEEST";
+			String id = "SEMIPJ";
 			String pwd = "1234";
 			conn = DriverManager.getConnection(url , id, pwd);
 			conn.setAutoCommit(false);
 			
 		}catch(Exception e) {
-			System.out.println("db커넥션에러");
+			System.out.println("커넥션 중 에러 발생");
 			e.printStackTrace();
 		}finally {
 			
@@ -86,4 +86,4 @@ public class JDBCTemplate {
 		}
 	}
 	
-}//class
+}
