@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원정보 수정</title>
+<script defer src="/resources/js/edit.js"></script>
 </head>
 <body>
 	
@@ -61,6 +62,7 @@
             </form>
             </div>
         </div>
+        <%@ include file="/WEB-INF/views/common/footer.jsp" %>
      </div>
 </body>
 </html>

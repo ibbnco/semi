@@ -16,6 +16,7 @@
 			<%@ include file="/WEB-INF/views/common/myMenuBar.jsp" %>
             
             <div class="inner_content">
+            <form action="/member/info" method="post">
             	<table>
             		<tr>
             			<td>이름 :</td>
@@ -43,9 +44,10 @@
             		
             		
             	</table>
+            	</form>
             </div>
-            <%@ include file="/WEB-INF/views/common/footer.jsp" %>
            </div>
+            <%@ include file="/WEB-INF/views/common/footer.jsp" %>
       </div>
 </body>
 </html>
