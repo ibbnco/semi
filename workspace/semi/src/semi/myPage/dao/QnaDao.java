@@ -88,7 +88,7 @@ public class QnaDao {
 		//sql
 		String sql = "SELECT QNA_NO,QNA_TITLE , QNA_DATE ,QNA_CONTENT ,QNA_ANSWER FROM QNA WHERE QNA_NO = ? AND QNA_DEL_STATUS = 'N'";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1,"1");
+		pstmt.setString(1,no);
 		System.out.println(no);
 		ResultSet rs = pstmt.executeQuery();
 		
@@ -97,12 +97,9 @@ public class QnaDao {
 		if (rs.next()) {
 			 String qnaNo = rs.getString("QNA_NO");
 	         String qnaTitle = rs.getString("QNA_TITLE");
-	         String qnaContent = rs.getString("QNA_CONTENT");
 	         String qnaDate = rs.getString("QNA_DATE");
+	         String qnaContent = rs.getString("QNA_CONTENT");
 	         String qnaAnswer = rs.getString("QNA_ANSWER");
-	         String qnaAnswerDate = rs.getString("QNA_ANSWER_DATE");
-	         String memberNo = rs.getString("MEMBER_NO");
-	         String adminNo = rs.getString("ADMIN_NO");
 	         
 	         qnaVo = new QnaVo();
 	         qnaVo.setQnaNo(qnaNo);
@@ -110,9 +107,6 @@ public class QnaDao {
 	         qnaVo.setQnaContent(qnaContent);
 	         qnaVo.setQnaDate(qnaDate);
 	         qnaVo.setQnaAnswer(qnaAnswer);
-	         qnaVo.setQnaAnswerDate(qnaAnswerDate);
-	         qnaVo.setMemberNo(memberNo);
-	         qnaVo.setAdminNo(adminNo);
 			
 	         
 		}

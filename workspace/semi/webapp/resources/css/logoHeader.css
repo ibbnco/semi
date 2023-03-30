@@ -86,14 +86,18 @@ p{
 }
 .content{
 	display: grid;
-	grid-template-columns: 3fr 7fr;
+	grid-template-columns: 2fr 8fr;
+    
+}
+.inner_content{
+    margin: 20px 0px 20px 30px;
 }
 .inner_title{
-	width:60%;
+	width:100%;
 	font-size: 40px;
 	text-align:left;
 	background-color: azure;
-	margin: 20px 20px 20px 20px;
+	
 }
 .comBtn , .inner_content .delBtn{
  	background-color: #104E86;
@@ -106,6 +110,6 @@ p{
  }
 
 .inner_content table{
- 	width:80%;
+ 	width:100%;
  	border: 1px solid #104E86;
  }

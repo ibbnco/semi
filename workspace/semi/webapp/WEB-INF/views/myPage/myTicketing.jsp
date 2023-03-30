@@ -19,19 +19,25 @@
                 <div class="inner_title">나의 예매 내역</div>
                 <form action="/myPage/ticketing" method="post">
                 <table>
+                	<thead>
+                		<tr>
+                			<td>제목</td>
+                			<td>날짜</td>
+                			<td>시간</td>
+                			<td>상영관</td>
+                			<td>인원</td>
+                		</tr>
+                	</thead>
+                <c:forEach items="${ ticketing }" var="tk">
                     <tr>
-                        <td rowspan="4">포스터</td>
-                        <td>영화이름</td>
+                        <td>${tk.movieTitle}</td>
+                        <td>${tk.ticketDate}</td>
+                        <td>${tk.startTime}</td>
+                        <td>${tk.theaterType}</td>
+                        <td>${tk.moviePerson}</td>
                     </tr>
-                    <tr>
-                        <td>상영날짜,시간</td>
-                    </tr>
-                    <tr>
-                        <td>상영관,인원</td>
-                    </tr>
-                    <tr>
-                        <td><a href="/myPage/reviewWrite">리뷰쓰기</a></td>
-                    </tr>
+                    
+                    </c:forEach>
                 </table>
                </form>
             </div>

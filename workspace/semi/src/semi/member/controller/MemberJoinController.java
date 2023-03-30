@@ -52,7 +52,7 @@ public class MemberJoinController extends HttpServlet{
 			resp.sendRedirect("/");
 			
 		}else {
-			req.setAttribute("errorMsg", "회원가입 실패");
+			req.setAttribute("alertMsg", "회원가입 실패");
 			req.getRequestDispatcher("/WEB-INF/views/common/error.jsp").forward(req, resp);
 		}
 		

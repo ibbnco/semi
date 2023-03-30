@@ -12,7 +12,7 @@ public class MemberDao {
 
 	public int join(Connection conn, MemberVo vo) throws Exception {
 		//SQL(DAO)
-		String sql = "INSERT INTO MEMBER(MEMBER_NO,MEMBER_ID,MEMBER_PWD,MEMBER_NAME,MEMBER_NICK,MEMBER_TEL,MEMBER_EMAIL) VALUES (SEQ_MEMBER_NO.NEXTVAL,?,?,?,?,?,?)";
+		String sql = "INSERT INTO MEMBER(MEMBER_NO,MEMBER_ID,MEMBER_PWD,MEMBER_NAME,MEMBER_NICK,MEMBER_TEL,MEMBER_EMAIL,GRADE_NO) VALUES (SEQ_MEMBER_NO.NEXTVAL,?,?,?,?,?,?,1)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1,vo.getMemberId() );
 		pstmt.setString(2,vo.getMemberPwd() );
@@ -20,6 +20,7 @@ public class MemberDao {
 		pstmt.setString(4, vo.getMemberNick());
 		pstmt.setString(5, vo.getMemberTel());
 		pstmt.setString(6, vo.getMemberEmail());
+		
 		int result = pstmt.executeUpdate();
 		
 		JDBCTemplate.close(pstmt);
@@ -174,7 +175,7 @@ public class MemberDao {
 
 	public int quit(Connection conn, MemberVo vo) throws Exception {
 		
-		String sql = "DELETE FROM MEMBER WHERE MEMBER_ID = ? AND MEMBER_PWD = ?";
+		String sql = "UPDATE MEMBER SET QUIT_YN ='Y' WHERE MEMBER_ID = ? AND MEMBER_PWD = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, vo.getMemberId());
 		pstmt.setString(2, vo.getMemberPwd());
@@ -188,7 +189,7 @@ public class MemberDao {
 
 	public int edit(Connection conn, MemberVo vo) throws Exception {
 
-		String sql = "UPDATE Member SET MEMBER_PWD = ?, MEMBER_NICK = ?,  MEMBER_EMAIL = ?,  MEMBER_TEL = ? WHERE MEMBER_ID = ? AND MEMBER_NAME = ?";
+		String sql = "UPDATE MEMBER SET MEMBER_PWD = ?, MEMBER_NICK = ?,  MEMBER_EMAIL = ?,  MEMBER_TEL = ? WHERE MEMBER_ID = ? AND MEMBER_NAME = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, vo.getMemberPwd());
 		pstmt.setString(2, vo.getMemberNick());

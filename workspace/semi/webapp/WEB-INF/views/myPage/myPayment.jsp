@@ -18,10 +18,7 @@
             
             <div class="inner_content" >
             	<div class="inner_title">나의 결제 내역</div>
-	            	<select>
-	            		<option value="movie">영화</option>
-	            		<option value="store">매점</option>
-	            	</select>
+	            	<form action="/myPage/payment" method="post">
             	<table>
             		<thead>
             			<tr>
@@ -32,24 +29,19 @@
 				            <td>상태</td>
             			</tr>
             		</thead>
-            		<thead>
-            			<tr>
-				            <td>날짜</td>
-				            <td>예매번호</td>
-				            <td>영화제목</td>
-				            <td>결제금액</td>
-				            <td>상태</td>
-            			</tr>
-            		</thead>
+            		<tbody>
+            		<c:forEach items="${payList}" var="pa">
             		<tr>
-			            <td></td>
-			            <td></td>
-			            <td></td>
-			            <td></td>
-			            <td></td>
-			            <td></td>
+			            <td>${pa.date}</td>
+			            <td>${pa.sOrderNo}</td>
+			            <td>${pa.productName}</td>
+			            <td>${pa.total}</td>
+			            <td>${pa.status}</td>
             		</tr>
+            		</c:forEach>
+            		</tbody>
             	</table>
+            	</form>
             </div>
          </div>
          <%@ include file="/WEB-INF/views/common/footer.jsp" %>

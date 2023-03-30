@@ -26,13 +26,11 @@ public class MyQnaWriteController extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		//데이터 꺼내기
-		String memberNo = req.getParameter("memberNo");
 		String qnaTitle = req.getParameter("qnaTitle");
 		String qnaContent = req.getParameter("qnaContent");
 		
 		//데이터 뭉치기
 		QnaVo vo = new QnaVo();
-		vo.setMemberNo(memberNo);
 		vo.setQnaTitle(qnaTitle);
 		vo.setQnaContent(qnaContent);
 		
@@ -54,7 +52,7 @@ public class MyQnaWriteController extends HttpServlet{
 			resp.sendRedirect("/WEB-INF/views/myPage/myQna.jsp");
 		}else {
 			req.getSession().setAttribute("alertMsg", "게시글 작성 실패");
-			resp.sendRedirect("/WEB-INF/views/myPage/myQna.jsp");
+			resp.sendRedirect("/WEB-INF/views/common/error.jsp");
 		}
 		
 	

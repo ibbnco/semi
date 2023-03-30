@@ -17,21 +17,30 @@
 			<%@ include file="/WEB-INF/views/common/myMenuBar.jsp" %>
             
             <div class="inner_content" >
-  				<div class="inner_title">포인트 내역</div>      
+  				<div class="inner_title">포인트 내역</div>  
+  				<form action="/myPage/point" method="post">    
   				<table>
             		<thead>
             			<tr>
 				            <td>내용</td>
 				            <td>날짜</td>
-				            <td>적립/사용</td>
+				            <td>적립</td>
+				            <td>사용</td>
             			</tr>
             		</thead>
+            		<tbody>
+            		<c:forEach items="${pointList}" var="po">
             		<tr>
-			            <td></td>
-			            <td></td>
-			            <td></td>
+            			<td><input type="checkbox" class="under-checkbox"></td>
+			            <td>${po.productName}</td>
+			            <td>${po.date}</td>
+			            <td>${po.pointPlus}</td>
+			            <td>${po.pointMinus}</td>
             		</tr>
-            	</table>    
+            		</c:forEach>
+            		</tbody>
+            	</table> 
+            	</form>   
             </div>
          </div>
          <%@ include file="/WEB-INF/views/common/footer.jsp" %>

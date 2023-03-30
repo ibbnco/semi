@@ -30,14 +30,38 @@
 				            <td>평점</td>
             			</tr>
             		</thead>
+            		<tbody>
+            		<c:forEach items="${reviewList}" var="rvl">
             		<tr>
             			<td><input type="checkbox" class="email-checkbox"></td>
-			            <td></td>
-			            <td></td>
-			            <td></td>
-			            <td></td>
+			            <td>${rvl.movieTitle}</td>
+			            <td>${rvl.content}</td>
+			            <td>${rvl.reviewDate}</td>
+			            <td>${rvl.star}</td>
             		</tr>
+            			</c:forEach>
+            			</tbody>
             	</table>
+            	<div id="page-area">
+			
+				<c:if test="${pageVo.currentPage >1}">
+				<a href="/myPage/qnaList?page=${pageVo.currentPage-1}">이전</a>
+				</c:if>
+				<c:forEach var="i" begin="${pageVo.startPage}" end="${pageVo.endPage}" >
+
+					<c:if test="${pageVo.currentPage == i}">
+					<span>${i}</span>
+					</c:if>
+
+					<c:if test="${pageVo.currentPage != i}">
+					<a href="/myPage/qnaList?page=${i}">${i}</a>
+					</c:if>
+
+				</c:forEach>
+				<c:if test="${pageVo.currentPage < pageVo.maxPage}">
+				<a href="/myPage/qnaList?page=${pageVo.currentPage+1}">다음</a>
+				</c:if>
+			</div>
             	</form>
             </div>
         </div>
@@ -54,6 +78,8 @@
             }
             
         });
+        
+        
     </script>
 </body>
 </html>

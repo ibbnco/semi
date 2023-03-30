@@ -7,6 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <title>회원정보 수정</title>
+<style type="text/css">
+.red-color{color: red;}
+ .blue-color{color: blue;}
+</style>
 <script defer src="/resources/js/edit.js"></script>
 </head>
 <body>
@@ -32,14 +36,15 @@
             		</tr>
             		<tr>
             			<td>비밀번호 :</td>
-            			<td><input type="password" name = "memberPwd1" placeholder="영문,숫자,!,@,# 조합 (8~16자)"></td>
+            			<td><input type="password" name = "memberPwd" placeholder="영문,숫자,!,@,# 조합 (8~16자)"></td>
             		</tr>
             		<tr>
             			<td>비밀번호 확인:</td>
             			<td><input type="password" name = "memberPwd2" placeholder="영문,숫자,!,@,# 조합 (8~16자)"></td>
             		</tr>
             		<tr class="center">
-                		<td colspan="2" id="pwd-result"></td> 
+                		<td></td> 
+                		<td id="pwd-result"></td> 
             		</tr>
             		<tr>
             			<td>닉네임 :</td>

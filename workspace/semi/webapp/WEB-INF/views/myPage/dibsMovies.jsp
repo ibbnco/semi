@@ -18,18 +18,21 @@
             
             <div class="inner_content">
             	<div class="inner_title">찜한 영화</div>
+            	<form action="/myPage/dibs" method="post">
                 <table>
+                <c:forEach items="${dibsMovie}" var="dibs">
                     <tr>
-                        <td rowspan="2">포스터</td>
-                        <td>영화이름</td>
-                        <td><button type="button" onclick="del();">del</button></td>
+                        <td rowspan="2">${dibs.movieImg}</td>
+                        <td>${dibs.movieTitle}</td>
+                        <td><button type="button" onclick="del();">삭제하기</button></td>
                     </tr>
                     <tr>
-                        <td>개봉일 : </td>
+                        <td>개봉일 : ${dibs.openningDate}</td>
                         <td><button type="button" onclick="location.href='예매하기'">예매하기</button></td>
                     </tr>
-                    
+                    </c:forEach>
                 </table>
+                </form>
             </div>
             <%@ include file="/WEB-INF/views/common/footer.jsp" %>
            </div>
