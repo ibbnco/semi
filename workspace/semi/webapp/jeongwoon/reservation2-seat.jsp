@@ -29,7 +29,11 @@
         </div>
                     
            <div  class="paychoice" >
+<<<<<<< HEAD
        <button><a href="/movie/pay">결제선택→</a></button></div>
+=======
+       <button><a href="/movie/payment">결제선택→</a></button></div>
+>>>>>>> 25c23b567d946613ff0988f063b3040a3c7ecb9e
       
               </div>
 

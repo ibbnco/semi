@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 public class MovieSelectContoller2 extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-				//화면
-	
+
+
 		req.getRequestDispatcher("/jeongwoon/reservation2-seat.jsp").forward(req, resp);
 	}
 		@Override

@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 public class MovieSelectContoller1 extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+				
 		
 		
 		req.getRequestDispatcher("/jeongwoon/reservation1-movie.jsp").forward(req, resp);
