@@ -328,7 +328,7 @@
         <div style="text-align: center;"><a href="detailpage.jsp"><img src="../imgs/스즈메의 문단속.jpeg" alt="">스즈메의 문단속</div></a>
         <div style="text-align: center;"><a href="detailpage2.jsp"><img src="../imgs/더 퍼스트 슬램덩크.jpeg" alt="">더 퍼스트 슬램덩크</div></a>
         <div style="text-align: center;"><a href="detailpage3.jsp"><img src="../imgs/소울메이트.jpeg" alt="">소울메이트</div></a>
-        <div style="text-align: center;"><a href="detailpage4.jsp"><img src="../imgs/아임 히어로 더 파이널.jpeg" alt="">아임 히어로 더 파이널</div></a>
+        <div style="text-align: center;"><a href="detailpage4.jsp"><img src="../imgs/아임히어로더파이널.jpeg" alt="">아임 히어로 더 파이널</div></a>
         <div style="text-align: center;"><a href="detailpage5.jsp"><img src="../imgs/샤잠! 신들의 분노.jpeg" alt="">샤잠! 신들의 분노</div></a>
         <div style="text-align: center;"><a href="detailpage6.jsp"><img src="../imgs/웅남이.jpeg" alt="">웅남이</div></a>
         <div style="text-align: center;"><a href="detailpage7.jsp"><img src="../imgs/치킨래빗.jpeg" alt="">치킨래빗</div></a>
@@ -351,7 +351,7 @@
     </div>
     <h2 style="color: #78B9E9;">이벤트</h2>
     <div style="color: #104E86;" class="ff">
-        <div style="text-align: center;"><img src="../imgs/개봉작이벤트.jpeg" alt="">개봉작 설명서</div></a>
+        <div style="text-align: center;"><img src="../imgs/개 봉작이벤트.jpeg" alt="">개봉작 설명서</div></a>
         <div style="text-align: center;"><img src="../imgs/예 매오픈이벤트.jpeg" alt="">예매 오픈 알림 서비스</div></a>
         <div style="text-align: center;"><img src="../imgs/슬 램덩크이벤트2.jpeg" alt="">유니폼 키링 재판매</div></a>
         <div style="text-align: center;"><img src="../imgs/만 우절이벤트.jpeg" alt="">만우절 이벤트</div></a>
