@@ -1,6 +1,7 @@
 package semi.myPage.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,12 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import semi.myPage.service.QnaService;
 import semi.myPage.service.ReviewService;
+import semi.myPage.vo.QnaVo;
 import semi.myPage.vo.ReviewVo;
+import semi.util.page.PageVo;
 
 @WebServlet("/myPage/reviewWrite")
 public class MyReviewWriteController extends HttpServlet{
 
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.getRequestDispatcher("/WEB-INF/views/myPage/myReviewWrite.jsp").forward(req, resp);

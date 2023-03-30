@@ -8,8 +8,7 @@
 <style type="text/css">
 .otherPage{
 	clear: both;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	
 	background-color: #78B9E9;
 	text-align: center;
 }
@@ -74,15 +73,11 @@
 				</c:if>
 			</div>
             	</form>
-            	<div class="otherPage">
-					<span onclick="location.href ='자주하는 질문 페이지'">
-						<p style="font-size: 20px;">자주하는 질문</p>
-						고객님들께서 주로 하시는 질문에 대한 답변을 한곳에 모아두었습니다.
-					</span>
-					<span onclick="location.href ='/myPage/qnaWrite'">
+            	<div class="otherPage" onclick="location.href ='/myPage/qnaWrite'">
+					
 						<p style="font-size: 20px;">1:1 문의 작성</p>
 						불편사항과 문의사항을 남겨주시면 친절히 답변드리겠습니다.
-					</span>
+					
             	</div>
             </div>
        	</div>
@@ -106,8 +101,7 @@
 
     	const tbody = document.querySelector("main tbody");
     	tbody.addEventListener("click",(event)=>{
-    		const no = event.target.parentNode.children[0].innerText;
-    		alert(no);
+    		const no = event.target.parentNode.children[1].innerText;
     		location.href = "/myPage/qnaDetail?qnaNo=" + no;
     	});
 

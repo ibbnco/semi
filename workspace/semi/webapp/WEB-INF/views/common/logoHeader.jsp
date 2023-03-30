@@ -30,7 +30,7 @@
         	<c:if test="${loginMember != null }">
         		${loginMember.memberNick}님 환영합니다.
         		 <a href="/member/logout"><img src="/resources/img/로그인.png" alt="logout"> <p class="text">로그아웃</p></a>
-        		 <a href="/myPage/point" ><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
+        		 <a href="/myPage/qnaList?page=1" ><img src="/resources/img/마이페이지.png" alt="mypage"><p class="text">마이페이지</p></a>
             	 <a href="고객센터 페이지" ><img src="/resources/img/고객센터.png" alt="servicecenter"><p class="text">고객센터</p></a>
         	
         	</c:if>

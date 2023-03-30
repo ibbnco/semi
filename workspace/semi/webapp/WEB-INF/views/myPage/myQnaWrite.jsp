@@ -25,7 +25,7 @@
 					<input type="hidden" name="writer" value="${loginMember.no}">
 					<tr>
 						<td>제목</td>
-						<td><input type="text" name="title" placeholder="제목을 입력하세요."></td>
+						<td><input type="text" name="title" placeholder="최대 20 BYTE"></td>
 					</tr>
 					
 					<tr>

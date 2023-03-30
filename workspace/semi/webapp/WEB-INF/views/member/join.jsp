@@ -25,12 +25,15 @@
             </tr>
             <tr>
                 <td>아이디</td>
-                <td><input class="textBox" type="text" name="memberId"  placeholder="영문,숫자 조합 (6~12자)">
-                &nbsp;&nbsp;<button type="button" onclick="checkId();"class="comBtn">중복확인</button></td>
+                <td><input class="textBox" type="text" name="memberId"  placeholder="영문,숫자 조합 (6~12자)">&nbsp;&nbsp;
+                <button type="button" onclick="checkId();"class="comBtn">중복확인</button>
+                
+                </td>
             </tr>
+            
             <tr>
                 <td>비밀번호</td>
-                <td><input class="textBox" type="password" name="memberPwd1" placeholder="영문,숫자,!,@,# 조합 (8~16자)"></td>
+                <td><input class="textBox" type="password" name="memberPwd" placeholder="영문,숫자,!,@,# 조합 (8~16자)"></td>
             </tr>
             <tr>
                 <td>비밀번호 확인</td>
@@ -47,17 +50,11 @@
             <tr>
                 <td>이메일</td>
                 <td>
-                    <input type="text" name="memberEmail" id="inputEmailForm"  maxlength="30">
-					<button onclick="emailAuthentication()" id="eamilAuthBtn" type="button" class="btnChk">인증</button>
+                    <input class="textBox" type="email" name="memberEmail"  placeholder="@뒤 도메인 주소를 적어주세요.">
+					 
                 </td>
             </tr>
-            <tr>
-                <td>인증번호</td>
-                <td><input type="text" name="authCode" id="inputAuthCode"  maxlength="10" disabled="disabled">
-				<button onclick="authCodeCheck()" id="authCodeCheckBtn" type="button" disabled="disabled" class="btnChk">인증</button>
-				<input type="hidden" name="authPass" id="authPass" value="false">
-				</td>
-            </tr>
+            
             <tr>
                 <td>전화번호</td>
                 <td><input class="textBox" type="tel" name="memberTel" placeholder="(-)제외 11자리"></td>

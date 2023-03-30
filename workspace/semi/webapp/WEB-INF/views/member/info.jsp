@@ -39,7 +39,7 @@
             			<td>${loginMember.memberTel}</td>
             		</tr>
             		<tr>
-            			<td><button type="button" onclick="checkPwd();" class="comBtn">정보수정 하기</button></td>
+            			<td><button type="button" onclick="location.href ='/member/edit'" class="comBtn">정보수정 하기</button></td>
             		</tr>
             		
             		
