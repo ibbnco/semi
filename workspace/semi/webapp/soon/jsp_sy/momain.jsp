@@ -328,7 +328,7 @@
         <div style="text-align: center;"><a href="detailpage.jsp"><img src="../imgs/스즈메의 문단속.jpeg" alt="">스즈메의 문단속</div></a>
         <div style="text-align: center;"><a href="detailpage2.jsp"><img src="../imgs/더 퍼스트 슬램덩크.jpeg" alt="">더 퍼스트 슬램덩크</div></a>
         <div style="text-align: center;"><a href="detailpage3.jsp"><img src="../imgs/소울메이트.jpeg" alt="">소울메이트</div></a>
-        <div style="text-align: center;"><a href="detailpage4.jsp"><img src="../imgs/아임 히어로 더 파이널.jpeg" alt="">아임 히어로 더 파이널</div></a>
+        <div style="text-align: center;"><a href="detailpage4.jsp"><img src="../imgs/아임히어로더파이널.jpeg" alt="">아임 히어로 더 파이널</div></a>
         <div style="text-align: center;"><a href="detailpage5.jsp"><img src="../imgs/샤잠! 신들의 분노.jpeg" alt="">샤잠! 신들의 분노</div></a>
         <div style="text-align: center;"><a href="detailpage6.jsp"><img src="../imgs/웅남이.jpeg" alt="">웅남이</div></a>
         <div style="text-align: center;"><a href="detailpage7.jsp"><img src="../imgs/치킨래빗.jpeg" alt="">치킨래빗</div></a>
