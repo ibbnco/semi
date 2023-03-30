@@ -26,7 +26,7 @@
 <body>
     <header class="header">
         <div class="header_logo">
-            <a href="momain.jsp">
+            <a href="">
                 <h1>뉴비무비</h1>
             </a>
             <p>NEWBMOVIE</p>
@@ -56,11 +56,11 @@
     <div class="header_menu">
         <section>
             <ul>
-                <li><a href="momain.jsp">영화</a></li>
+                <li><a href="index.jsp">영화</a></li>
                 <li><a href="">예매</a></li>
                 <li><a href="">극장</a></li>
                 <li><a href="">스토어</a></li>
-                <li><a href="이벤트페이지.html">이벤트</a></li>
+                <li><a href="">이벤트</a></li>
             </ul>
     </div>
     <br>
@@ -143,32 +143,6 @@
         <div>
             <img style="margin: auto;" src="../imgs/샤잠 평점.png" alt="평점">
         </div>
-  <div class="container">
-      <div class="row">
-         <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
-            <thead>
-               <tr>
-                  <th style="background-color: #eeeeee; text-align: center;">번호</th>
-                  <th style="background-color: #eeeeee; text-align: center;">제목</th>
-                  <th style="background-color: #eeeeee; text-align: center;">작성자</th>
-                  <th style="background-color: #eeeeee; text-align: center;">작성일</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>1</td>
-                  <td>안녕하세요</td>
-                  <td>홍길동</td>
-                  <td>2023-03-29</td>
-               </tr>
-            </tbody>
-         </table>
-         <a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
-      </div>
-   </div>
-  </div>
-        </div>
-    </div>
 </body>
 
 </html>
