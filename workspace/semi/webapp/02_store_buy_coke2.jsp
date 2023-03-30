@@ -55,7 +55,7 @@
 	<%@ include file="logoHeader.jsp" %>
     <div id="menuname">
         <ul>
-            <li>팝콘 PopCorn</li><br>
+            <li>음료 Drinks</li><br>
         </ul>
     </div> 
     

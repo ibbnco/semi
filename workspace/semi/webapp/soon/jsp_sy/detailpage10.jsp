@@ -118,7 +118,7 @@
                 <h2 class="text-2xl mb-3">예고편</h2>
                 <div>
                     <a href="http://h.vod.cgv.co.kr/vodCGVa/86833/86833_212317_1200_128_960_540.mp4">
-                        <img src="../imgs/에브리씽 예고편.png" alt="예고편" />
+                        <img src="../imgs/에브리씽예고편.png" alt="예고편" />
                     </a>
                 </div>
             </div>

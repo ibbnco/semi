@@ -4,11 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style type="text/css">
-	#btn{
-		width: 50%;
-	}
-</style>
 </head>
 <body>
 
@@ -42,25 +37,25 @@
                 <tr class="cartlist_detail">
                     <td><input type="checkbox" name="chk"></td>
                     <td><img src="/images/팝콘.jpg" alt="" width="100px" height="100px"></td>
-                    <td>
-                        <p></p>
-                    </td>
-                    <td></td>
+                    <td>팝콘</td>
+                    <td>4500</td>
                     <td id="btn"><%@ include file="btn.jsp" %></td>
-                    <td></td>
+                    <td>4500</td>
                 </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3"></td>
-                    <td colspan="3"></td>
+                <tr class="cartlist_detail">
+                    <td><input type="checkbox" name="chk"></td>
+                    <td><img src="/images/pretzel.jpg" alt="" width="100px" height="100px"></td>
+                    <td>프레첼</td>
+                    <td>3500</td>
+                    <td id="btn"><%@ include file="btn.jsp" %></td>
+                    <td>3500</td>
                 </tr>
-            </tfoot>
+ 			</tbody>
         </table>
         </div> 
         <div class="cart_mainbtns">
-            <button class="cart_orderbtn left" onclick="location.href='01_store_main.jsp';">돌아가기</button>
-            <button class="cart_orderbtn right" onclick="location.href='03_store_payment.jsp';">구매하기</button>
+            <button type="button" class="cart_orderbtn left" onclick="location.href='/store/main'">돌아가기</button>
+            <button type="button" class="cart_orderbtn right" onclick="location.href='/store/pay'">구매하기</button>
         </div>
     <footer><%@ include file="footer.jsp" %></footer>
 		<script>

@@ -6,26 +6,12 @@
 <meta charset="UTF-8">
 <style>
 
-	#menuname{
-    	float: left;
-    	font-size: 20px;
-    	font-weight: bold;
-	}
-	
-	ul>li {
-	    display: inline;
-	}
-	ul{
-	    float: right;
-	}
-	li{
-	    float: left;
-	}
+
 </style>
 </head>
 <body>
 
-	<%@ include file="mainHead.jsp" %>
+	<%@ include file="logoHeader3.jsp" %>
 	
 	<div id="menuname">
         <ul>     
@@ -35,7 +21,7 @@
 	
     <div id="main_detail"><img src="/images/storephoto.jpg" alt="" width="1030px" height="300px"></div>
     <div id="main">
-		<table id="store">
+    	<table id="store">
         <tr>
             <td class="name">팝콘</td>
             <td></td>
