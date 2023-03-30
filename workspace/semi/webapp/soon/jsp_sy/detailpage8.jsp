@@ -25,7 +25,7 @@
 <body>
     <header class="header">
         <div class="header_logo">
-            <a href="momain.jsp">
+            <a href="index.jsp">
                 <h1>뉴비무비</h1>
             </a>
             <p>NEWBMOVIE</p>
@@ -55,11 +55,11 @@
     <div class="header_menu">
         <section>
             <ul>
-                <li><a href="momain.jsp">영화</a></li>
+                <li><a href="index.jsp">영화</a></li>
                 <li><a href="">예매</a></li>
                 <li><a href="">극장</a></li>
                 <li><a href="">스토어</a></li>
-                <li><a href="이벤트페이지.html">이벤트</a></li>
+                <li><a href="">이벤트</a></li>
             </ul>
     </div>
     <br>
