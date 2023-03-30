@@ -14,7 +14,7 @@
 
     <header class="header">
         <div>
-            <a href="메인 페이지 주소값"><img class="logo" src="/images/movielogo.png" alt="logo" ></a>
+            <a href="index.jsp"><img class="logo" src="/images/movielogo.png" alt="logo" ></a>
         </div>
         <div></div>
         <div class="mypage">

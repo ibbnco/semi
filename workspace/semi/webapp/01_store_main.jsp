@@ -19,7 +19,7 @@
         </ul>
     </div> 
 	
-    <div id="main_detail"><img src="/images/storephoto.jpg" alt="" width="1030px" height="300px"></div>
+    <div id="main_detail"><img src="/images/storephoto.jpg" alt="" style="width: 100%" height="300px"></div>
     <div id="main">
     	<table id="store">
         <tr>

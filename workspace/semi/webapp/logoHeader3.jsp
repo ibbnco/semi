@@ -14,7 +14,7 @@
 
     <header class="header">
         <div>
-            <a href="메인 페이지 주소값"><img class="logo" src="/images/movielogo.png" alt="logo" ></a>
+            <a href="index.jsp"><img class="logo" src="/images/movielogo.png" alt="logo" ></a>
         </div>
         <div></div>
         <div class="mypage">
@@ -36,11 +36,11 @@
         </header>
             <div class="header_menu">
                 <ul>
-                    <li><a href="영화 페이지">영화</a></li>
-                    <li><a href="영화예매 페이지">예매</a></li>
-                    <li><a href="극장소개 페이지">극장</a></li>
-                    <li><a href="/store/main">스토어</a></li>
-                    <li><a href="이벤트 페이지">이벤트</a></li>
+                 <li><a href="/soon/jsp_sy/moviec.jsp">영화</a></li>
+                 <li><a href="/jeongwoon/reservation1-movie.jsp">예매</a></li>
+                 <li><a href="/jeongwoon/theater.jsp">극장</a></li>
+                 <li><a href="/store/main">스토어</a></li>
+                 <li><a href="">이벤트</a></li>
                 </ul>
             </div>
         
