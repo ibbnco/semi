@@ -19,7 +19,7 @@
 
 <header class="header">
   <div class="header_logo">
-      <a href="admin1.jsp">
+      <a href="adminMain.jsp">
           <h1>관리자페이지</h1>
           <p>AdminPage</p>
       </a>
@@ -29,11 +29,11 @@
 </div>
 <table>
   <tr>
-    <td>ID - <a>yedece12</a></td>
-    <td>권한레벨 - <a>Lv3</a></td>
+    <td>ID - <a>${hv.id}yedece12</a></td>
+    <td>권한레벨 - <a>${hv.lv}3레벨</a></td>
   </tr>
   <tr>
-    <td colspan="2">답변대기 문의 - <a href="경로">999개 ㅎ^^</a></td>
+    <td colspan="2">답변대기 문의 - <a href="QNA?page=1">${hv.cnt}8개</a></td>
   </tr>
 </table>
 </header>
