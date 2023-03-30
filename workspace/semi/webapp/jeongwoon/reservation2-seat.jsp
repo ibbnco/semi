@@ -20,7 +20,7 @@
          <div class=""></div></div>
 
         <div  class="moviechoice" >
-      <div class="moviechoiceinside" ><button><a href="./reservation1-movie.jsp">←영화선택</a></button></div>
+      <div class="moviechoiceinside" ><button><a href="/movie/movie">←영화선택</a></button></div>
       </div>
         
       <div class="person"> 
@@ -29,7 +29,7 @@
         </div>
                     
            <div  class="paychoice" >
-       <button><a href="./reservation3-pay.jsp">결제선택→</a></button></div>
+       <button><a href="/movie/payment">결제선택→</a></button></div>
       
               </div>
 

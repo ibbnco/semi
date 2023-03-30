@@ -92,7 +92,7 @@
                     </div></div></div>
             
               <div  class="seatchoice" >
-                <div class="seatchoiceinside" ><button><a href="./reservation2-seat.jsp">좌석선택→</a></div>
+                <div class="seatchoiceinside" ><button><a href="/movie/seat">좌석선택→</a></div>
                 </div>
                 
                 </div>

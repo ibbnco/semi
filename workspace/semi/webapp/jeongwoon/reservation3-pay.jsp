@@ -14,22 +14,22 @@
         <br>
         <div class="parant">
          <div class="title">결제</div>
-         <div class="payment123">
-         <!-- 상품 정보 영역-->
+         <div class="payment123">  
 
-<p>영화표</p>
-<p>결제 금액: 15,000원</p>
+<img style="width:200px; height:300px; margin-left:370px" src="img/귀멸의 칼날.jpeg">
 
-<!-- 결제 방법 영역-->
-<div class="title2">결제 방법</div>
-<div id="payment-method"></div>
+</div>
+
+           
 <div id="agreement"></div>
-            <div class="choice movie" img src></div>
-         </div>
+       
            <div  class="moviechoice">
-            <div class="moviechoiceinside"><a href="./reservation2-seat.jsp">
+            <div class="moviechoiceinside"><a href="/movie/seat">
                 ←좌석선택</a></div></div>
-                <div class="all-pay">총 결제금액</div> 
+                <div class="all-pay">총 결제금액
+                
+<p>영화표</p>
+<p>결제 금액: 15,000원</p></div> 
             <div  class="payment2">
                 <div class="paymentinside"><a href="">
                     결제하기→</a></div></div>
