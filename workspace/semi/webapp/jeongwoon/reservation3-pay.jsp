@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="reservation3-pay.css" rel="stylesheet" type="text/css">
+<link href="/jeongwoon/reservation3-pay.css" rel="stylesheet" type="text/css">
 <jsp:include page="logoHeader.jsp" />
 
 <body>
@@ -27,7 +27,7 @@
             <div class="choice movie" img src></div>
          </div>
            <div  class="moviechoice">
-            <div class="moviechoiceinside"><a href="./reservation2-seat.jsp">
+            <div class="moviechoiceinside"><a href="/movie/seat">
                 ←좌석선택</a></div></div>
                 <div class="all-pay">총 결제금액</div> 
             <div  class="payment2">

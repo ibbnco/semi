@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 
-<link href="reservation1-movie.css" rel="stylesheet" type="text/css">
+<link href="/jeongwoon/reservation1-movie.css" rel="stylesheet" type="text/css">
 <jsp:include page="logoHeader.jsp" />
 
 
@@ -24,16 +24,16 @@
                 
                     <div class="movielistinside">
                         <form> 
-                            <input type="radio" name="movies" value="img/귀멸의 칼날.jpeg" checked onchange="drawImage()">귀멸의 칼날<br>
-                            <input type="radio" name="movies" value="img/스즈메의 문단속.jpeg" onchange="drawImage()">스즈메<br>
-                            <input type="radio" name="movies" value="img/에브리씽.jpeg" onchange="drawImage()">에브리씽<br>
-                            <input type="radio" name="movies" value="img/더 퍼스트 슬램덩크.jpeg" onchange="drawImage()">더 퍼스트 슬램덩크<br>
-                            <input type="radio" name="movies" value="img/샤잠! 신들의 분노.jpeg" onchange="drawImage()">샤잠! 신들의 분노<br>
-                            <input type="radio" name="movies" value="img/소울메이트.jpeg" onchange="drawImage()">소울메이트<br>
-                            <input type="radio" name="movies" value="img/아임 히어로 더 파이널.jpeg" onchange="drawImage()">아임 히어로 더 파이널<br>
-                            <input type="radio" name="movies" value="img/치킨래빗.jpeg" onchange="drawImage()">치킨레빗<br>
-                            <input type="radio" name="movies" value="img/플레인.jpeg" onchange="drawImage()">플레인<br>
-                            <input type="radio" name="movies" value="img/웅남이.jpeg"  onchange="drawImage()">웅남이<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/귀멸의 칼날.jpeg" checked onchange="drawImage()">귀멸의 칼날<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/스즈메의 문단속.jpeg" onchange="drawImage()">스즈메<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/에브리씽.jpeg" onchange="drawImage()">에브리씽<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/더 퍼스트 슬램덩크.jpeg" onchange="drawImage()">더 퍼스트 슬램덩크<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/샤잠! 신들의 분노.jpeg" onchange="drawImage()">샤잠! 신들의 분노<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/소울메이트.jpeg" onchange="drawImage()">소울메이트<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/아임 히어로 더 파이널.jpeg" onchange="drawImage()">아임 히어로 더 파이널<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/치킨래빗.jpeg" onchange="drawImage()">치킨레빗<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/플레인.jpeg" onchange="drawImage()">플레인<br>
+                            <input type="radio" name="movies" value="/jeongwoon/img/웅남이.jpeg"  onchange="drawImage()">웅남이<br>
                             <br>
                             
                         </select></form>
@@ -83,7 +83,7 @@
     
               <div class="movieinf">
                 
-                    <div class="choicemovieimage"><img id="movieimage" src="img/귀멸의 칼날.jpeg" style="width: 170px;" height="200px"  >
+                    <div class="choicemovieimage"><img id="movieimage" src="/jeongwoon/img/귀멸의 칼날.jpeg" style="width: 170px;" height="200px"  >
                     </div>
                     <div  class="choicetheater" >
                          
@@ -92,7 +92,7 @@
                     </div></div></div>
             
               <div  class="seatchoice" >
-                <div class="seatchoiceinside" ><button><a href="./reservation2-seat.jsp">좌석선택→</a></div>
+                <div class="seatchoiceinside" ><button><a href="/movie/seat">좌석선택→</a></div>
                 </div>
                 
                 </div>
